@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "होम",
+    "admin": "व्यवस्थापक डॅशबोर्ड",
+    "scanner": "QR स्कॅनर",
+    "login": "लॉगिन",
+    "logout": "लॉगआउट"
+  },
+  "home": {
+    "title": "स्मार्ट मेड QR",
+    "subtitle": "QR कोडद्वारे औषधांची सर्वंकष माहिती त्वरित मिळवा",
+    "scanPrompt": "सुरुवात करण्यासाठी औषधाचा QR कोड स्कॅन करा",
+    "searchPrompt": "किंवा आमच्या औषध डेटाबेसमध्ये शोधा"
+  },
+  "medicine": {
+    "details": "औषधाचे तपशील",
+    "notFound": "औषध सापडले नाही",
+    "genericName": "सामान्य नाव (Generic Name)",
+    "brandName": "ब्रँडचे नाव",
+    "strength": "क्षमता (Strength)",
+    "dosageForm": "औषधाचे स्वरूप (Dosage Form)",
+    "route": "घेण्याचा मार्ग (Route)",
+    "useIndication": "उपयोग आणि लक्षणे",
+    "dose": "शिफारस केलेला डोस",
+    "directionForUse": "वापरण्यासाठी सूचना",
+    "manufacturer": "उत्पादक",
+    "batchNo": "बॅच क्रमांक",
+    "mfgDate": "उत्पादन तारीख",
+    "expDate": "अंतिम मुदत (Expiry Date)",
+    "mfgLicenceNo": "उत्पादन परवाना क्रमांक",
+    "printQR": "QR कोड प्रिंट करा",
+    "downloadQR": "QR कोड डाउनलोड करा",
+    "valid": "वैध (वापरण्यास सुरक्षित)",
+    "expiringSoon": "लवकरच कालबाह्य होईल",
+    "expired": "कालबाह्य - वापरू नका"
+  },
+  "admin": {
+    "dashboard": "व्यवस्थापक डॅशबोर्ड",
+    "addMedicine": "औषध जोडा",
+    "editMedicine": "औषध संपादित करा",
+    "deleteMedicine": "हटवा",
+    "save": "बदल जतन करा",
+    "cancel": "रद्द करा",
+    "confirmDelete": "तुम्हाला खात्री आहे की तुम्हाला हे औषध हटवायचे आहे?",
+    "importExport": "आयात/निर्यात",
+    "exportCSV": "CSV निर्यात करा",
+    "importCSV": "CSV आयात करा",
+    "loginTitle": "व्यवस्थापक लॉगिन",
+    "password": "पासवर्ड",
+    "loginBtn": "लॉगिन करा",
+    "invalidCredentials": "अवैध पासवर्ड"
+  },
+  "scanner": {
+    "title": "औषधाचा QR स्कॅन करा",
+    "instruction": "तुमचा कॅमेरा औषधाच्या पॅकेजिंगवरील QR कोडकडे निर्देशित करा",
+    "permissionDenied": "कॅमेऱ्यास प्रवेश नाकारला",
+    "scanError": "QR कोड स्कॅन करताना त्रुटी",
+    "stopScan": "स्कॅनिंग थांबवा"
+  },
+  "verify": {
+    "title": "बॅच तपासा",
+    "verified": "बॅच यशस्वीरीत्या तपासली गेली",
+    "unverified": "बॅच सापडली नाही किंवा अवैध आहे"
+  },
+  "common": {
+    "loading": "लोड होत आहे...",
+    "error": "काहीतरी चूक झाली",
+    "success": "यशस्वी",
+    "search": "शोधा...",
+    "language": "भाषा",
+    "close": "बंद करा",
+    "back": "मागे"
+  },
+  "footer": {
+    "disclaimer": "प्रदान केलेली माहिती केवळ संदर्भासाठी आहे. वैद्यकीय सल्ल्यासाठी आरोग्यसेवा व्यावसायिकाचा सल्ला घ्या."
+  }
+}

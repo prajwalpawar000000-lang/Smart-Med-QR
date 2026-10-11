@@ -1,0 +1,969 @@
+{
+  "disclaimer": "⚠️ MedQR Live Database • Avishkar State Research Project",
+  "medicines": [
+    {
+      "id": 1,
+      "srNo": 1,
+      "brandName": "Crocin 500",
+      "genericName": "Paracetamol",
+      "dosageForm": "Tablet",
+      "strength": "500 mg",
+      "dose": "1 tablet every 4-6 hours (Max 4g/day)",
+      "useIndication": "Fever reduction and mild-to-moderate pain relief (headache, body ache, toothache)",
+      "directionForUse": "Swallow whole with a full glass of water. Can be taken with or without food. Do not exceed 4000mg in 24 hours.",
+      "route": "Oral",
+      "manufacturer": "GlaxoSmithKline Pharmaceuticals Ltd.",
+      "batchNo": "PA24567",
+      "mfgDate": "04/2024",
+      "expDate": "03/2026",
+      "mfgLicenceNo": "G/25/1884",
+      "pageLink": "/medicine/1",
+      "sideEffects": {
+        "common": [
+          "Mild nausea",
+          "Stomach upset",
+          "Sweating"
+        ],
+        "serious": [
+          "Liver toxicity (with overdose)",
+          "Allergic skin rash",
+          "Jaundice (yellow eyes/skin)"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "पॅरासिटामॉल गोळी (Paracetamol Tablet)",
+          "useIndication": "ताप उतरवण्यासाठी, अंगदुखी, डोकेदुखी आणि सर्दीच्या त्रासावर आराम मिळण्यासाठी.",
+          "dose": "१ गोळी आवश्यकतेनुसार (दिवसातून कमाल ३ वेळा जेवणानंतर).",
+          "directionForUse": "१ गोळी एका ग्लास पाण्यासोबत गिळावी. रिकाम्या पोटी न घेता काहीतरी खाऊन घ्यावी. २४ तासांत ३ पेक्षा जास्त गोळ्या घेऊ नयेत.",
+          "sideEffects": "सौम्य मळमळ किंवा पित्त. जास्त प्रमाणात घेतल्यास यकृताला इजा होऊ शकते."
+        },
+        "hi": {
+          "genericName": "पैरासिटामोल गोली (Paracetamol Tablet)",
+          "useIndication": "बुखार उतारने, सिरदर्द, बदन दर्द और दांत दर्द से तुरंत राहत पाने के लिए।",
+          "dose": "1 गोली आवश्यकतानुसार (दिन में अधिकतम 3 बार भोजन के बाद)।",
+          "directionForUse": "1 गोली एक गिलास पानी के साथ निगलें। खाली पेट न लें, कुछ खाकर ही लें।",
+          "sideEffects": "हल्की मिचली, पेट में भारीपन। अधिक मात्रा में लेने से लिवर को नुकसान हो सकता है।"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "srNo": 2,
+      "brandName": "Ibugesic 400",
+      "genericName": "Ibuprofen",
+      "dosageForm": "Tablet",
+      "strength": "400 mg",
+      "dose": "1 tablet twice daily after meals",
+      "useIndication": "Anti-inflammatory and analgesic for joint pain, swelling, dental pain, and muscular pain",
+      "directionForUse": "Take with meals or milk to prevent stomach upset. Swallow whole; do not crush or chew.",
+      "route": "Oral",
+      "manufacturer": "Cipla Ltd.",
+      "batchNo": "IB38291",
+      "mfgDate": "10/2024",
+      "expDate": "11/2026",
+      "mfgLicenceNo": "MH/DRUG/28A/452",
+      "pageLink": "/medicine/2",
+      "sideEffects": {
+        "common": [
+          "Stomach irritation",
+          "Heartburn",
+          "Dizziness",
+          "Nausea"
+        ],
+        "serious": [
+          "Gastric ulceration",
+          "Internal gastrointestinal bleeding",
+          "Kidney impairment",
+          "Severe skin allergy"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "आयबुप्रोफेन गोळी (सूज व वेदनाशामक)",
+          "useIndication": "सांधेदुखी, स्नायूंची दुखापत, दातदुखी, सूज आणि तीव्र अंगदुखी कमी करण्यासाठी.",
+          "dose": "१ गोळी दिवसातून २ वेळा जेवणानंतर.",
+          "directionForUse": "उपाशीपोटी मुळीच घेऊ नये. पोटात जळजळ होऊ नये म्हणून जेवणानंतर किंवा नाश्त्यानंतर भरपूर पाण्यासोबत घ्यावी.",
+          "sideEffects": "पोटात जळजळ, मळमळ, आंबट ढेकर. पोटात अल्सर असल्यास डॉक्टरांना सांगावे."
+        },
+        "hi": {
+          "genericName": "इबुप्रोफेन गोली (दर्द और सूजन रोधी)",
+          "useIndication": "जोड़ों के दर्द, मांसपेशियों में खिंचाव, दांत दर्द और सूजन को कम करने के लिए।",
+          "dose": "1 गोली दिन में 2 बार भोजन के बाद।",
+          "directionForUse": "खाली पेट बिल्कुल न लें। पेट में जलन से बचने के लिए भोजन या दूध के बाद पानी के साथ निगलें।",
+          "sideEffects": "पेट में जलन, मिचली, अपच। अल्सर के मरीज बिना डॉक्टर न लें।"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "srNo": 3,
+      "brandName": "Zyrtec 10",
+      "genericName": "Cetirizine Hydrochloride",
+      "dosageForm": "Tablet",
+      "strength": "10 mg",
+      "dose": "1 tablet once daily at bedtime",
+      "useIndication": "Allergic rhinitis, hives, hay fever, sneezing, runny nose, itchy skin, and watery eyes",
+      "directionForUse": "Take once daily in the evening or at night. Avoid operating heavy machinery or driving after taking.",
+      "route": "Oral",
+      "manufacturer": "Dr. Reddy's Laboratories",
+      "batchNo": "CZ15483",
+      "mfgDate": "05/2025",
+      "expDate": "04/2026",
+      "mfgLicenceNo": "AP/MED/1029",
+      "pageLink": "/medicine/3",
+      "sideEffects": {
+        "common": [
+          "Drowsiness",
+          "Dry mouth",
+          "Fatigue",
+          "Headache"
+        ],
+        "serious": [
+          "Extreme sedation",
+          "Difficulty urinating",
+          "Severe allergic reactions (angioedema)"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "सेटिरिझिन गोळी (अ‍ॅलर्जी व खाज प्रतिबंधक)",
+          "useIndication": "शिंका येणे, नाक वाहणे, अंगाला खाज सुटणे, लाल पुरळ उठणे आणि डोळे चुरचुरणे.",
+          "dose": "१ गोळी रात्री झोपण्यापूर्वी.",
+          "directionForUse": "रात्री झोपताना १ गोळी पाण्यासोबत घ्यावी. ही गोळी घेतल्यावर सुस्ती किंवा झोप येऊ शकते, त्यामुळे गाडी चालवू नये.",
+          "sideEffects": "गुंगी येणे, तोंड कोरडे पडणे, थकवा जाणवणे."
+        },
+        "hi": {
+          "genericName": "सिटिरिज़ीन गोली (एलर्जी व खुजली रोधी)",
+          "useIndication": "छींक आना, बहती नाक, शरीर में खुजली, पित्ती (चकत्ते) और आंखों से पानी बहना।",
+          "dose": "1 गोली रात को सोते समय।",
+          "directionForUse": "रात को सोने से पहले पानी के साथ लें। इस गोली से नींद और सुस्ती आ सकती है, इसलिए गाड़ी न चलाएं।",
+          "sideEffects": "सुस्ती, मुंह सूखना, हल्का सिरदर्द।"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "srNo": 4,
+      "brandName": "Losec 20 (Capsule)",
+      "genericName": "Omeprazole",
+      "dosageForm": "Capsule",
+      "strength": "20 mg",
+      "dose": "1 capsule once daily before breakfast",
+      "useIndication": "Gastroesophageal reflux disease (GERD), acid peptic ulcer, heartburn, and hyperacidity",
+      "directionForUse": "Swallow whole with water at least 30-60 minutes before breakfast. Do not crush or chew capsule pellets.",
+      "route": "Oral",
+      "manufacturer": "AstraZeneca Pharma India Ltd.",
+      "batchNo": "OM67245",
+      "mfgDate": "10/2025",
+      "expDate": "09/2027",
+      "mfgLicenceNo": "KA/BLR/2021/66",
+      "pageLink": "/medicine/4",
+      "sideEffects": {
+        "common": [
+          "Headache",
+          "Abdominal pain",
+          "Flatulence",
+          "Constipation or diarrhea"
+        ],
+        "serious": [
+          "Clostridium difficile diarrhea",
+          "Bone fracture risk with long-term use",
+          "Hypomagnesemia"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "ओमेप्राझोल कॅप्सूल (अ‍ॅसिडिटी व पोटदुखी)",
+          "useIndication": "पोटात जळजळ, आम्लपित्त (अ‍ॅसिडिटी), छातीत जळजळ, पोटात अल्सर आणि अपचन.",
+          "dose": "१ कॅप्सूल सकाळी उपाशीपोटी (जेवणापूर्वी अर्धा तास).",
+          "directionForUse": "सकाळी उठल्यावर दात घासून रिकाम्या पोटी १ कॅप्सूल साध्या पाण्यासोबत संपूर्ण गिळावी. कॅप्सूल चावून किंवा फोडून खाऊ नये.",
+          "sideEffects": "डोकेदुखी, पोट फुगणे, सौम्य जुलाब."
+        },
+        "hi": {
+          "genericName": "ओमेप्राजोल कैप्सूल (एसिडिटी व गैस रोधी)",
+          "useIndication": "छाती में जलन, पेट में गैस, खट्टी डकारें, एसिडिटी और पेट के अल्सर में आराम के लिए।",
+          "dose": "1 कैप्सूल सुबह खाली पेट (नाश्ते से आधा घंटा पहले)।",
+          "directionForUse": "सुबह उठकर खाली पेट 1 कैप्सूल पूरे पानी के साथ निगल लें। कैप्सूल को चबाएं या खोलें नहीं।",
+          "sideEffects": "सिरदर्द, पेट फूलना, हल्की दस्त।"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "srNo": 5,
+      "brandName": "Amoxil 500 (Capsule)",
+      "genericName": "Amoxicillin Trihydrate",
+      "dosageForm": "Capsule",
+      "strength": "500 mg",
+      "dose": "1 capsule every 8 hours after food",
+      "useIndication": "Bacterial infections of ear, nose, throat, lower respiratory tract, and urinary tract",
+      "directionForUse": "Take with meals or water. Complete full prescribed antibiotic course even if feeling better.",
+      "route": "Oral",
+      "manufacturer": "Sun Pharmaceutical Industries",
+      "batchNo": "AX98103",
+      "mfgDate": "05/2025",
+      "expDate": "04/2027",
+      "mfgLicenceNo": "GJ/VAD/5104",
+      "pageLink": "/medicine/5",
+      "sideEffects": {
+        "common": [
+          "Mild diarrhea",
+          "Nausea",
+          "Vomiting",
+          "Stomach cramps"
+        ],
+        "serious": [
+          "Severe allergic anaphylaxis",
+          "Skin blistering",
+          "Severe persistent watery diarrhea"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "अमोक्सिसिलिन कॅप्सूल (जिवाणू संसर्ग / अँटीबायोटिक)",
+          "useIndication": "घशाचा संसर्ग, खोकला, कानाचा संसर्ग, छातीत कफ व जखम पिकण्यावर.",
+          "dose": "१ कॅप्सूल दिवसातून ३ वेळा (दर ८ तासांनी) जेवणानंतर.",
+          "directionForUse": "जेवणानंतर पाण्यासोबत संपूर्ण गिळावी. डॉक्टरांनी सांगितलेला पूर्ण कोर्स (५ दिवस) पूर्ण करावा, मधेच बंद करू नये.",
+          "sideEffects": "पातळ शौचास होणे, अंगावर लाल पुरळ, मळमळ."
+        },
+        "hi": {
+          "genericName": "एमोक्सिसिलिन कैप्सूल (एंटीबायोटिक)",
+          "useIndication": "गले का संक्रमण, कान का दर्द, सीने में जकड़न, खांसी और घाव के संक्रमण में।",
+          "dose": "1 कैप्सूल दिन में 3 बार (हर 8 घंटे पर) भोजन के बाद।",
+          "directionForUse": "भोजन के बाद पानी के साथ पूरा निगलें। डॉक्टर द्वारा बताया गया पूरा कोर्स खत्म करें, बीच में न छोड़ें।",
+          "sideEffects": "पतले दस्त, मिचली, शरीर पर दाने।"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "srNo": 6,
+      "brandName": "Ascoril-D Cough Syrup",
+      "genericName": "Dextromethorphan + Chlorpheniramine",
+      "dosageForm": "Syrup",
+      "strength": "10 mg + 2 mg / 5 ml",
+      "dose": "10 ml (2 teaspoonfuls) twice or thrice daily",
+      "useIndication": "Dry cough, allergic cough, throat tickle, and bronchial irritation",
+      "directionForUse": "Shake bottle well before use. Use the measuring cup provided. Avoid drinking water immediately after ingestion.",
+      "route": "Oral",
+      "manufacturer": "Glenmark Pharmaceuticals Ltd.",
+      "batchNo": "AS48912",
+      "mfgDate": "11/2024",
+      "expDate": "10/2026",
+      "mfgLicenceNo": "HP/SOLAN/2019/88",
+      "pageLink": "/medicine/6",
+      "sideEffects": {
+        "common": [
+          "Drowsiness",
+          "Dizziness",
+          "Dry mouth",
+          "Nausea"
+        ],
+        "serious": [
+          "Respiratory depression (high doses)",
+          "Confusion",
+          "Hallucinations"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "कोरड्या खोकल्याचे सिरप (Dextromethorphan + Chlorpheniramine)",
+          "useIndication": "कोरडा खोकला, घशात खवखव, वारंवार ठसका लागणे आणि अ‍ॅलर्जी.",
+          "dose": "२ चमचे (१० मिली) दिवसातून २ ते ३ वेळा.",
+          "directionForUse": "बाटली वापरण्यापूर्वी चांगली हलवावी. दिलेल्या मापाच्या कपनेच मोजून प्यावे. सिरप पिल्यानंतर लगेच पाणी पिऊ नये.",
+          "sideEffects": "थोडी सुस्ती, गुंगी येणे, तोंड कोरडे पडणे."
+        },
+        "hi": {
+          "genericName": "सूखी खांसी का सिरप (Dextromethorphan + Chlorpheniramine)",
+          "useIndication": "सूखी खांसी, गले में खराश, लगातार धसका और एलर्जी की खांसी में।",
+          "dose": "10 मिलीलीटर (2 चम्मच) दिन में 2 से 3 बार।",
+          "directionForUse": "शीशी को अच्छी तरह हिलाकर नाप वाले ढक्कन से पिएं। पीने के 15 मिनट बाद तक पानी न पिएं।",
+          "sideEffects": "नींद आना, सुस्ती, मुंह में सूखापन।"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "srNo": 7,
+      "brandName": "Calpol 250 Peadiatric Syrup",
+      "genericName": "Paracetamol Pediatric Oral Suspension",
+      "dosageForm": "Syrup",
+      "strength": "250 mg / 5 ml",
+      "dose": "5 ml to 7.5 ml every 6 hours based on child weight",
+      "useIndication": "Childhood fever, post-immunization pyrexia, teething pain, and viral discomfort",
+      "directionForUse": "Shake well. Use oral dosing syringe or measuring spoon. Do not give more than 4 doses in 24 hours.",
+      "route": "Oral",
+      "manufacturer": "GSK Healthcare India",
+      "batchNo": "CP55102",
+      "mfgDate": "11/2024",
+      "expDate": "10/2026",
+      "mfgLicenceNo": "TN/CHE/2022/410",
+      "pageLink": "/medicine/7",
+      "sideEffects": {
+        "common": [
+          "Mild skin flushing",
+          "Sweating"
+        ],
+        "serious": [
+          "Liver damage if overdosed",
+          "Allergic rash",
+          "Swelling of lips or eyes"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "लहान मुलांचे तापाचे सिरप (पॅरासिटामॉल)",
+          "useIndication": "लहान मुलांचा ताप उतरवण्यासाठी, लसीकरणानंतरचा ताप आणि अंगदुखी.",
+          "dose": "डॉक्टरांच्या सल्ल्यानुसार मुलाच्या वजनाप्रमाणे (उदा. ५ ते ७.५ मिली दर ६ तासांनी).",
+          "directionForUse": "बाटली चांगली हलवून औषध मोजण्याच्या चमच्याने किंवा सिरिंजने योग्य प्रमाणात पाजावे. रिकाम्या पोटी देऊ नये.",
+          "sideEffects": "सौम्य घाम येणे, पोटात अस्वस्थता."
+        },
+        "hi": {
+          "genericName": "बच्चों के बुखार का सिरप (पैरासिटामोल)",
+          "useIndication": "बच्चों का बुखार उतारने, टीका लगने के बाद का दर्द और बदन दर्द में।",
+          "dose": "डॉक्टर की सलाह से बच्चे के वजन अनुसार (5 से 7.5 मिली हर 6 घंटे में)।",
+          "directionForUse": "शीशी को अच्छी तरह हिलाकर नाप वाली चम्मच या ड्रॉपर से ही पिलाएं।",
+          "sideEffects": "पसीना आना, पेट में भारीपन।"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "srNo": 8,
+      "brandName": "Gelusil MPS Antacid Suspension",
+      "genericName": "Aluminium Hydroxide + Magnesium Hydroxide + Simethicone",
+      "dosageForm": "Suspension",
+      "strength": "250 mg + 250 mg + 50 mg / 5 ml",
+      "dose": "10-20 ml (2-4 teaspoonfuls) after meals and at bedtime",
+      "useIndication": "Hyperacidity, heartburn, gastritis, flatulence, and peptic ulcer pain",
+      "directionForUse": "Shake bottle vigorously before pouring. Best taken 1 hour after meals and before sleeping.",
+      "route": "Oral",
+      "manufacturer": "Pfizer India Ltd.",
+      "batchNo": "GL99182",
+      "mfgDate": "05/2024",
+      "expDate": "03/2027",
+      "mfgLicenceNo": "MH/BOM/2018/12",
+      "pageLink": "/medicine/8",
+      "sideEffects": {
+        "common": [
+          "Chalky taste",
+          "Mild constipation or loose stools",
+          "Nausea"
+        ],
+        "serious": [
+          "Hypophosphatemia (long-term high doses)",
+          "Magnesium accumulation in kidney patients"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "अ‍ॅसिडिटी व गॅसवरील सस्पेन्शन (अँटासिड)",
+          "useIndication": "छातीत जळजळ, पोटात गॅस धरणे, पोट फुगणे, आंबट पाणी तोंडाशी येणे.",
+          "dose": "२ चमचे (१० मिली) जेवणानंतर किंवा झोपण्यापूर्वी.",
+          "directionForUse": "बाटली जोरदार हलवूनच औषध घ्यावे. जेवल्यानंतर १ तासाने किंवा गॅस झाल्यास लगेच प्यावे.",
+          "sideEffects": "खडे शौचास होणे किंवा पोट बिघडणे."
+        },
+        "hi": {
+          "genericName": "एसिडिटी और गैस का सस्पेंशन (एंटासिड)",
+          "useIndication": "सीने में जलन, पेट में भारी गैस, खट्टी डकारें और पेट फूलने पर तुरंत आराम।",
+          "dose": "2 चम्मच (10 मिली) भोजन के बाद या सोते समय।",
+          "directionForUse": "शीशी को जोर से हिलाकर लें। भोजन के 1 घंटे बाद या गैस होने पर तुरंत पिएं।",
+          "sideEffects": "कब्ज या हल्का दस्त।"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "srNo": 9,
+      "brandName": "Augmentin Duo Suspension",
+      "genericName": "Amoxicillin + Potassium Clavulanate Oral Suspension",
+      "dosageForm": "Suspension",
+      "strength": "200 mg + 28.5 mg / 5 ml",
+      "dose": "5 ml twice daily with meals as prescribed by pediatrician",
+      "useIndication": "Pediatric bacterial infections: otitis media, tonsillitis, chest infections, sinusitis",
+      "directionForUse": "Reconstitute with boiled and cooled water up to mark. Shake well. Store reconstituted suspension in refrigerator and discard after 7 days.",
+      "route": "Oral",
+      "manufacturer": "GlaxoSmithKline Pharmaceuticals",
+      "batchNo": "AG71203",
+      "mfgDate": "11/2026",
+      "expDate": "10/2028",
+      "mfgLicenceNo": "MH/THN/2023/901",
+      "pageLink": "/medicine/9",
+      "sideEffects": {
+        "common": [
+          "Diarrhea",
+          "Nausea",
+          "Vomiting",
+          "Diaper rash (fungal)"
+        ],
+        "serious": [
+          "Severe allergic reaction",
+          "Cholestatic jaundice / hepatitis",
+          "Pseudomembranous colitis"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "मुलांसाठी अँटीबायोटिक सस्पेन्शन (अमोक्सिसिलिन + क्लेव्ह्युलानेट)",
+          "useIndication": "लहान मुलांचे छातीतील इन्फेक्शन, कानदुखी, टॉन्सिल्स, न्यूमोनिया आणि मूत्रमार्गाचा संसर्ग.",
+          "dose": "५ मिली दिवसातून २ वेळा जेवणासोबत (डॉक्टरांच्या सल्ल्यानुसार).",
+          "directionForUse": "उकळून थंड केलेल्या पाण्याने पावडर विरघळवून तयार करावे. फ्रीजमध्ये ठेवावे व ७ दिवसांच्या आतच संपवावे.",
+          "sideEffects": "पातळ जुलाब, मळमळ, पोटात दुखणे."
+        },
+        "hi": {
+          "genericName": "बच्चों का एंटीबायोटिक सस्पेंशन",
+          "useIndication": "बच्चों में कान का दर्द, टॉन्सिल, सीने में कफ और गले के संक्रमण में।",
+          "dose": "5 मिली दिन में 2 बार भोजन के साथ (डॉक्टर की सलाह अनुसार)।",
+          "directionForUse": "उबले और ठंडे पानी से निशान तक घोलें। अच्छी तरह हिलाएं और फ्रिज में रखकर 7 दिन के भीतर इस्तेमाल करें।",
+          "sideEffects": "दस्त, मिचली, उल्टी।"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "srNo": 10,
+      "brandName": "Monocef 1g Injection",
+      "genericName": "Ceftriaxone Sodium",
+      "dosageForm": "Injection",
+      "strength": "1 g / Vial",
+      "dose": "1g to 2g once daily via slow IV infusion or deep IM",
+      "useIndication": "Typhoid fever, bacterial meningitis, community acquired pneumonia, sepsis, post-op surgical prophylaxis",
+      "directionForUse": "FOR HOSPITAL / CLINICAL USE ONLY. Must be reconstituted with sterile water for injection and administered by qualified medical personnel.",
+      "route": "Intravenous / Intramuscular",
+      "manufacturer": "Aristo Pharmaceuticals Pvt. Ltd.",
+      "batchNo": "MN88410",
+      "mfgDate": "09/2026",
+      "expDate": "10/2028",
+      "mfgLicenceNo": "MP/IND/2020/554",
+      "pageLink": "/medicine/10",
+      "sideEffects": {
+        "common": [
+          "Pain at injection site",
+          "Phlebitis",
+          "Diarrhea",
+          "Leukopenia"
+        ],
+        "serious": [
+          "Severe anaphylactic shock",
+          "Biliary sludging",
+          "Immune hemolytic anemia"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "सेफ्ट्रियाक्सोन १ ग्रॅम इंजेक्शन (गंभीर संसर्गावरील अँटीबायोटिक)",
+          "useIndication": "टायफॉइड ताप, न्यूमोनिया, मेंदूज्वर, मूत्रमार्गाचा तीव्र संसर्ग आणि शस्त्रक्रियेनंतरची जखम.",
+          "dose": "१ ग्रॅम शिरेतून (IV) किंवा मांडीत/कमरेत (IM) दर २४ तासांनी.",
+          "directionForUse": "हे इंजेक्शन स्वतः घेऊ नये. केवळ प्रशिक्षित डॉक्टर किंवा परिचारिकेमार्फतच शिरेत किंवा स्नायूमध्ये दिले पाहिजे.",
+          "sideEffects": "सुई टोचलेल्या ठिकाणी वेदना, सूज, अंगावर पुरळ."
+        },
+        "hi": {
+          "genericName": "सेफ्ट्रिअक्सोन 1 ग्राम इंजेक्शन (गंभीर संक्रमण रोधी)",
+          "useIndication": "टाइफाइड बुखार, निमोनिया, दिमागी बुखार (मेनिन्जाइटिस) और गंभीर संक्रमण में।",
+          "dose": "1 ग्राम नस (IV) या मांसपेशी (IM) में डॉक्टर द्वारा।",
+          "directionForUse": "यह इंजेक्शन केवल अस्पताल में डॉक्टर या नर्स द्वारा ही लगाया जाना चाहिए। खुद न लगाएं।",
+          "sideEffects": "सुई लगने की जगह दर्द, सूजन, लाल चकत्ते।"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "srNo": 11,
+      "brandName": "Ciplox Eye Drops 0.3%",
+      "genericName": "Ciprofloxacin Ophthalmic Solution",
+      "dosageForm": "Eye Drops",
+      "strength": "0.3% w/v",
+      "dose": "1-2 drops into affected eye(s) every 4 hours",
+      "useIndication": "Bacterial conjunctivitis (pink eye), corneal ulcer, ocular discharge and inflammation",
+      "directionForUse": "Wash hands before use. Tilt head back, pull lower eyelid down and instill 1 drop. Do not touch dropper tip to eye or skin. Discard 1 month after opening.",
+      "route": "Ophthalmic",
+      "manufacturer": "Cipla Ltd.",
+      "batchNo": "CP22901",
+      "mfgDate": "06/2024",
+      "expDate": "10/2028",
+      "mfgLicenceNo": "GA/GOA/2021/31",
+      "pageLink": "/medicine/11",
+      "sideEffects": {
+        "common": [
+          "Transient burning/stinging",
+          "Foreign body sensation",
+          "Crusting on eyelids"
+        ],
+        "serious": [
+          "Corneal precipitate",
+          "Corneal staining",
+          "Photophobia"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "सिप्रोफ्लॉक्सासिन डोळ्यांचे थेंब (आय ड्रॉप्स)",
+          "useIndication": "डोळे येणे (कंजंक्टिव्हाइटिस), डोळ्यातून घाण/पाणी येणे, डोळे लाल होणे व डोळ्याची खाज.",
+          "dose": "१ ते २ थेंब दिवसातून ३ ते ४ वेळा बाधित डोळ्यात.",
+          "directionForUse": "हात स्वच्छ धुवावेत. डोळ्याच्या खालच्या पापणीची पिशवी करून त्यात १ थेंब टाकावा. बाटलीचे टोक डोळ्याला किंवा हाताला लावू नये.",
+          "sideEffects": "थेंब टाकल्यावर तात्पुरती जळजळ, काही सेकंद अंधुक दिसणे."
+        },
+        "hi": {
+          "genericName": "सिप्रोफ्लोक्सासिन आई ड्रॉप्स (आंखों की दवाई)",
+          "useIndication": "आंख आना (कंजंक्टिवाइटिस), आंखों से कीचड़ या पानी बहना, आंखें लाल होना।",
+          "dose": "1 से 2 बूंद दिन में 3 से 4 बार आंख में।",
+          "directionForUse": "हाथ धोकर निचली पलक खींचकर बूंद डालें। ड्रॉपर की नोक को आंख या उंगलियों से न छुएं। शीशी खोलने के 1 माह बाद फेंक दें।",
+          "sideEffects": "डालने पर हल्की जलन, कुछ पल धुंधला दिखना।"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "srNo": 12,
+      "brandName": "Candibiotic Ear Drops",
+      "genericName": "Clotrimazole + Beclomethasone + Ofloxacin + Lignocaine",
+      "dosageForm": "Ear Drops",
+      "strength": "1% + 0.025% + 0.3% + 2% w/v",
+      "dose": "3-4 drops into affected ear 3 to 4 times daily",
+      "useIndication": "Otitis externa, otomycosis (fungal ear infection), painful discharging ear, swimmer's ear",
+      "directionForUse": "Warm bottle in palms. Tilt head with affected ear facing upward. Instill drops and maintain position for 5 minutes. Do not insert cotton plugs.",
+      "route": "Otic",
+      "manufacturer": "Glenmark Pharmaceuticals",
+      "batchNo": "CN40182",
+      "mfgDate": "05/2026",
+      "expDate": "04/2028",
+      "mfgLicenceNo": "MH/NAS/2022/19",
+      "pageLink": "/medicine/12",
+      "sideEffects": {
+        "common": [
+          "Mild ear canal burning",
+          "Stinging sensation",
+          "Transient dizziness"
+        ],
+        "serious": [
+          "Ototoxicity (if eardrum is perforated)",
+          "Severe fungal overgrowth"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "कानाचे अँटीफंगल व पेनकिलर थेंब (इअर ड्रॉप्स)",
+          "useIndication": "कान दुखणे, कानातून पू किंवा पाणी वाहणे, कानाला बुरशी (फंगस) लागणे व कानात खाज सुटणे.",
+          "dose": "३ ते ४ थेंब दिवसातून ३ वेळा दुखणाऱ्या कानात.",
+          "directionForUse": "मान एका बाजूला कलवून कानात ३-४ थेंब टाकावेत. औषध आत जाण्यासाठी ५ मिनिटे मान तशीच ठेवावी. कानात कापूस खूप आत कोंबू नये.",
+          "sideEffects": "कानात हलकी खाज किंवा जळजळ."
+        },
+        "hi": {
+          "genericName": "कान का ड्राप (एंटीफंगल और दर्द निवारक)",
+          "useIndication": "कान में दर्द, कान बहना, कान में फंगस (फफूंद) और खुजली में।",
+          "dose": "3 से 4 बूंद दिन में 3 बार प्रभावित कान में।",
+          "directionForUse": "सिर को एक तरफ झुकाकर बूंदें डालें और 5 मिनट तक उसी स्थिति में रहें ताकि दवाई अंदर जाए।",
+          "sideEffects": "कान में हल्की खुजली या झनझनाहट।"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "srNo": 13,
+      "brandName": "Glycomet 500 (Tablet)",
+      "genericName": "Metformin Hydrochloride",
+      "dosageForm": "Tablet",
+      "strength": "500 mg",
+      "dose": "1 tablet twice daily with or immediately after meals",
+      "useIndication": "Type 2 diabetes mellitus glycemic control and insulin sensitization",
+      "directionForUse": "Swallow whole with meals to avoid gastrointestinal upset. Do not skip meals while taking this medicine. Regularly monitor blood sugar.",
+      "route": "Oral",
+      "manufacturer": "USV Pvt. Ltd.",
+      "batchNo": "GM31940",
+      "mfgDate": "07/2026",
+      "expDate": "08/2028",
+      "mfgLicenceNo": "MH/MUM/2020/781",
+      "pageLink": "/medicine/13",
+      "sideEffects": {
+        "common": [
+          "Abdominal discomfort",
+          "Diarrhea",
+          "Metallic taste",
+          "Nausea"
+        ],
+        "serious": [
+          "Lactic acidosis (rare but severe)",
+          "Vitamin B12 deficiency (long term)"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "मेटफॉर्मिन ५०० मिग्रॅ गोळी (मधुमेह / शुगर नियंत्रण)",
+          "useIndication": "टाईप २ डायबिटीस (रक्तातील साखरेचे प्रमाण नियंत्रित ठेवण्यासाठी).",
+          "dose": "१ गोळी दिवसातून २ वेळा जेवणासोबत किंवा जेवणानंतर लगेच.",
+          "directionForUse": "गोळी न चावता पाण्यासोबत गिळावी. पोटात त्रास होऊ नये म्हणून जेवताना किंवा जेवल्यानंतर लगेच घ्यावी. नियमित साखर तपासावी.",
+          "sideEffects": "पोटात गडबड, मळमळ, तोंडाला धातूची चव."
+        },
+        "hi": {
+          "genericName": "मेटफॉर्मिन 500 मिलीग्राम (डायबिटीज / शुगर नियंत्रण)",
+          "useIndication": "टाइप 2 डायबिटीज में ब्लड शुगर (रक्त शर्करा) को नियंत्रित रखने के लिए।",
+          "dose": "1 गोली दिन में 2 बार भोजन के साथ या तुरंत बाद।",
+          "directionForUse": "गोली को चबाए बिना पानी से निगलें। पेट की खराबी से बचने के लिए हमेशा भोजन के साथ लें।",
+          "sideEffects": "पेट में मरोड़, मिचली, मुंह में कसैला स्वाद।"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "srNo": 14,
+      "brandName": "Bactroban Ointment 2%",
+      "genericName": "Mupirocin Ointment USP",
+      "dosageForm": "Ointment",
+      "strength": "2% w/w",
+      "dose": "Apply a thin film to the affected skin 3 times daily",
+      "useIndication": "Impetigo, folliculitis, infected cuts, scrapes, and minor open skin wounds",
+      "directionForUse": "Clean and dry the affected area. Apply a small amount and spread gently. The treated area may be covered with a sterile gauze bandage.",
+      "route": "Topical",
+      "manufacturer": "GlaxoSmithKline Pharmaceuticals",
+      "batchNo": "BC88102",
+      "mfgDate": "03/2026",
+      "expDate": "02/2026",
+      "mfgLicenceNo": "MH/THA/2021/44",
+      "pageLink": "/medicine/14",
+      "sideEffects": {
+        "common": [
+          "Burning sensation",
+          "Stinging",
+          "Itching at application site"
+        ],
+        "serious": [
+          "Contact dermatitis",
+          "Severe allergic rash",
+          "Polyethylene glycol toxicity (extensive open areas)"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "म्युपिरोसिन २% मलम (ऑइंटमेंट / जिवाणू प्रतिबंधक लेप)",
+          "useIndication": "पिकलेली जखम, त्वचेवरील फोड (इम्पेटिगो), कापल्यामुळे झालेला संसर्ग.",
+          "dose": "दिवसातून २ ते ३ वेळा बाधित त्वचेवर लावावे.",
+          "directionForUse": "जखम कोमट पाण्याने स्वच्छ धुवून वाळवावी. त्यानंतर बोटाने किंवा कापसाने पातळ थर लावावा. डोळ्यात लावू नये.",
+          "sideEffects": "लावलेल्या जागेवर थोडी खाज किंवा लालसरपणा."
+        },
+        "hi": {
+          "genericName": "म्यूपिरोसिन 2% मरहम (एंटीबायोटिक ऑइंटमेंट)",
+          "useIndication": "घाव पकना, त्वचा के फोड़े-फुंसियां, कटने-छिलने पर संक्रमण रोकने के लिए।",
+          "dose": "दिन में 2 से 3 बार प्रभावित जगह पर लगाएं।",
+          "directionForUse": "घाव को साफ करके सुखाएं, फिर पतली परत लगाएं। पट्टी से ढक सकते हैं। आंखों से दूर रखें।",
+          "sideEffects": "लगाने पर हल्की जलन या खुजली।"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "srNo": 15,
+      "brandName": "Candid Cream 1%",
+      "genericName": "Clotrimazole Cream IP",
+      "dosageForm": "Cream",
+      "strength": "1% w/w",
+      "dose": "Apply thinly to affected areas 2-3 times daily for 2 to 4 weeks",
+      "useIndication": "Tinea infections (ringworm/dad/kharuj), athlete's foot, jock itch, cutaneous candidiasis",
+      "directionForUse": "Wash and completely dry the affected skin. Rub in gently. Continue using for 2 weeks after symptoms disappear to prevent fungal relapse.",
+      "route": "Topical",
+      "manufacturer": "Glenmark Pharmaceuticals",
+      "batchNo": "CD11904",
+      "mfgDate": "11/2025",
+      "expDate": "10/2026",
+      "mfgLicenceNo": "HP/SOL/2022/99",
+      "pageLink": "/medicine/15",
+      "sideEffects": {
+        "common": [
+          "Mild skin peeling",
+          "Erythema",
+          "Pruritus",
+          "Irritation"
+        ],
+        "serious": [
+          "Contact sensitization",
+          "Severe skin blistering"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "क्लोट्रिमेझोल १% क्रीम (दाद, खाज व गजकर्ण मलम)",
+          "useIndication": "गजकर्ण (दाद), जांघेतील खाज, पायांच्या बोटांमधील बुरशी आणि घामोळ्यांचा संसर्ग.",
+          "dose": "दिवसातून २ वेळा (सकाळी व रात्री) स्वच्छ त्वचेवर लावावे.",
+          "directionForUse": "जागा साबणाने धुवून कोरडी करावी. मलम हळूवारपणे चोळावे. खाज थांबली तरी २ आठवडे मलम चालू ठेवावे जेणेकरून बुरशी समूळ नष्ट होईल.",
+          "sideEffects": "त्वचेवर हलकी आग किंवा लाल पुरळ."
+        },
+        "hi": {
+          "genericName": "क्लोट्रिमाजोल 1% क्रीम (दाद, खाज, खुजली का मरहम)",
+          "useIndication": "दाद (रिंगवर्म), जांघों में खुजली, पैरों की उंगलियों में फंगस और पसीने के संक्रमण में।",
+          "dose": "दिन में 2 से 3 बार साफ त्वचा पर लगाएं।",
+          "directionForUse": "प्रभावित त्वचा को धोकर सुखा लें, फिर क्रीम लगाएं। खुजली मिटने के बाद भी 2 हफ्ते तक लगाते रहें।",
+          "sideEffects": "लगाने पर हल्की चुभन या त्वचा का लाल होना।"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "srNo": 16,
+      "brandName": "Volini Pain Relief Gel",
+      "genericName": "Diclofenac Diethylamine Gel",
+      "dosageForm": "Gel",
+      "strength": "1.16% w/w",
+      "dose": "Apply 2g to 4g to painful site 3 to 4 times daily",
+      "useIndication": "Musculoskeletal sprains, joint pain, backache, neck stiffness, and sport strains",
+      "directionForUse": "Gently massage into the affected skin until absorbed. Do not apply on broken skin, cuts, or open wounds. Wash hands after application.",
+      "route": "Topical",
+      "manufacturer": "Sun Pharmaceutical Industries",
+      "batchNo": "VL55201",
+      "mfgDate": "10/2026",
+      "expDate": "09/2028",
+      "mfgLicenceNo": "GJ/BAR/2021/812",
+      "pageLink": "/medicine/16",
+      "sideEffects": {
+        "common": [
+          "Local skin irritation",
+          "Warmth sensation",
+          "Dry skin"
+        ],
+        "serious": [
+          "Photodermatitis",
+          "Systemic absorption toxicity (with extensive occluded usage)"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "डायक्लोफेनॅक पेन जेल (वेदना व सूज निवारक जेल)",
+          "useIndication": "कंबरदुखी, मानदुखी, सांधेदुखी, लचक भरणे आणि स्नायूंचा ताण.",
+          "dose": "दुखणाऱ्या भागावर दिवसातून ३ ते ४ वेळा हलक्या हाताने लावावे.",
+          "directionForUse": "दुखणाऱ्या जागेवर जेल लावून हलकेच पसरावे, जास्त जोराने घासू नये. उघड्या जखमेवर किंवा डोळ्यांजवळ लावू नये.",
+          "sideEffects": "लावलेल्या जागेवर त्वचेची जळजळ."
+        },
+        "hi": {
+          "genericName": "डाइक्लोफेनाक पेन जेल (दर्द व सूजन निवारक जेल)",
+          "useIndication": "कमर दर्द, गर्दन में अकड़न, जोड़ों का दर्द, मोच और मांसपेशियों के खिंचाव में।",
+          "dose": "दर्द वाली जगह पर दिन में 3 से 4 बार लगाएं।",
+          "directionForUse": "हल्के हाथों से लगाएं, जोर से मालिश न करें। कटी-फटी त्वचा पर न लगाएं। लगाने के बाद हाथ धो लें।",
+          "sideEffects": "लगाने की जगह हल्की जलन या गर्माहट।"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "srNo": 17,
+      "brandName": "Electral ORS Powder",
+      "genericName": "Oral Rehydration Salts (WHO Formula)",
+      "dosageForm": "Powder",
+      "strength": "21.8 g / Sachet",
+      "dose": "Dissolve entire contents in 1 Litre of clean drinking water",
+      "useIndication": "Dehydration due to diarrhea, cholera, heat exhaustion, vomiting, and heavy sweating",
+      "directionForUse": "Empty entire packet into exactly 1 Litre of boiled and cooled drinking water. Stir well. Discard solution after 24 hours. Do not mix with milk or juice.",
+      "route": "Oral",
+      "manufacturer": "FDC Limited",
+      "batchNo": "EL81902",
+      "mfgDate": "05/2026",
+      "expDate": "04/2028",
+      "mfgLicenceNo": "MH/WAL/2020/19",
+      "pageLink": "/medicine/17",
+      "sideEffects": {
+        "common": [
+          "Nausea or vomiting if consumed too rapidly"
+        ],
+        "serious": [
+          "Hypernatremia (if mixed with too little water)",
+          "Hyperkalemia (in severe renal failure)"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "ओआरएस पावडर (शरीरातील पाणी व क्षार भरून काढणारे जीवनजल)",
+          "useIndication": "जुलाब (उलट्या), डिहायड्रेशन, उन्हाचा चटका लागणे आणि अशक्तपणा.",
+          "dose": "१ पूर्ण पाकीट १ लिटर स्वच्छ पिण्याच्या पाण्यात विरघळवून दिवसभरात थोडे थोडे प्यावे.",
+          "directionForUse": "१ लिटर उकळून थंड केलेल्या पाण्यात पूर्ण पाकीट मिसळावे. तयार केलेले द्रावण २४ तासांतच वापरावे, शिल्लक राहिले तर फेकून द्यावे.",
+          "sideEffects": "योग्य प्रमाणात पाणी न मिसळल्यास उलट्या होऊ शकतात."
+        },
+        "hi": {
+          "genericName": "ओआरएस पाउडर (जीवनरक्षक घोल - WHO फॉर्मूला)",
+          "useIndication": "दस्त (डायरिया), उल्टी, लू लगना, डिहाइड्रेशन और कमजोरी में शरीर में पानी-नमक की पूर्ति।",
+          "dose": "पूरा 1 पैकेट 1 लीटर साफ पीने के पानी में घोलें।",
+          "directionForUse": "उबले और ठंडे 1 लीटर पानी में पूरा पैकेट अच्छी तरह घोलें। घोल को 24 घंटे के अंदर ही पिएं, बचा हुआ फेंक दें।",
+          "sideEffects": "ज्यादा गाढ़ा बनाने पर उल्टी या जी मिचलाना।"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "srNo": 18,
+      "brandName": "Econorm Probiotic Sachet",
+      "genericName": "Saccharomyces boulardii + Zinc + Electrolytes",
+      "dosageForm": "Sachet",
+      "strength": "250 mg / Sachet",
+      "dose": "1 sachet once or twice daily mixed with water or milk",
+      "useIndication": "Acute diarrhea, antibiotic-associated gut flora disruption, irritable bowel discomfort",
+      "directionForUse": "Mix contents into lukewarm or room-temperature water, milk, or juice. Consume immediately. Never mix with very hot liquids.",
+      "route": "Oral",
+      "manufacturer": "Dr. Reddy's Laboratories",
+      "batchNo": "EC61290",
+      "mfgDate": "10/2026",
+      "expDate": "08/2028",
+      "mfgLicenceNo": "TG/HYD/2022/411",
+      "pageLink": "/medicine/18",
+      "sideEffects": {
+        "common": [
+          "Mild flatulence",
+          "Bloating",
+          "Constipation"
+        ],
+        "serious": [
+          "Fungemia (in critically ill / central venous catheter patients)"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "प्रोबायोटिक सॅशे (पोटातील चांगल्या जिवाणूंचे पाकीट)",
+          "useIndication": "जुलाब, अँटीबायोटिक औषधांमुळे पोट बिघडणे, पोटातील इन्फेक्शन.",
+          "dose": "१ पाकीट दिवसातून १ ते २ वेळा.",
+          "directionForUse": "हे पाकीट थोडे कोमट पाणी, दूध किंवा ज्यूसमध्ये मिसळून ताबडतोब प्यावे. खूप गरम पेयात टाकू नये.",
+          "sideEffects": "पोटात हलका गॅस किंवा फुगणे."
+        },
+        "hi": {
+          "genericName": "प्रोबायोटिक सैशे (पेट के अच्छे बैक्टीरिया का पाउच)",
+          "useIndication": "दस्त, एंटीबायोटिक खाने से पेट खराब होना और आंतों के संक्रमण में।",
+          "dose": "1 पाउच दिन में 1 से 2 बार।",
+          "directionForUse": "गुनगुने पानी, दूध या जूस में मिलाकर तुरंत पिएं। बहुत गर्म तरल में न मिलाएं।",
+          "sideEffects": "हल्की गैस या पेट फूलना।"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "srNo": 19,
+      "brandName": "Hallens Glycerin Suppository 2g",
+      "genericName": "Glycerin USP (Suppository)",
+      "dosageForm": "Suppository",
+      "strength": "2 g / Suppository",
+      "dose": "1 suppository inserted rectally as needed",
+      "useIndication": "Acute constipation relief, pediatric and adult fecal impaction laxative",
+      "directionForUse": "NOT FOR ORAL USE! Wash hands, unwrap suppository, gently insert pointed end first into the rectum. Retain for 15-30 minutes for bowel movement.",
+      "route": "Rectal",
+      "manufacturer": "Bafna Pharmaceuticals",
+      "batchNo": "GL22810",
+      "mfgDate": "01/2024",
+      "expDate": "02/2026",
+      "mfgLicenceNo": "TN/MAD/2021/72",
+      "pageLink": "/medicine/19",
+      "sideEffects": {
+        "common": [
+          "Rectal irritation",
+          "Local burning sensation",
+          "Mild cramps"
+        ],
+        "serious": [
+          "Laxative dependence with prolonged misuse"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "ग्लिसरीन सपॉझिटरी (बद्धकोष्ठतेवर गुदद्वारात ठेवायची गोळी)",
+          "useIndication": "तीव्र बद्धकोष्ठता (शौचास कडक होणे, शौचास न होणे).",
+          "dose": "१ सपॉझिटरी आवश्यकतेनुसार गुदद्वारात ठेवावी.",
+          "directionForUse": "हात स्वच्छ धुवावेत. हे औषध तोंडाने खाण्याचे नाही! गुदद्वारातून आत सरकवावे आणि १५-२० मिनिटे शौच रोखून धरावे.",
+          "sideEffects": "गुदद्वारात हलकी चुरचुर किंवा जळजळ."
+        },
+        "hi": {
+          "genericName": "ग्लिसरीन सपोसिटरी (कब्ज दूर करने की बत्ती)",
+          "useIndication": "कड़ा कब्ज, मल त्याग में कठिनाई और पेट साफ न होने पर।",
+          "dose": "1 सपोसिटरी आवश्यकतानुसार गुदा मार्ग में।",
+          "directionForUse": "यह मुंह से खाने की दवाई नहीं है! हाथ धोकर गुदा मार्ग में डालें और 15-20 मिनट रोकें ताकि पेट साफ हो जाए।",
+          "sideEffects": "गुदा मार्ग में हल्की जलन या मरोड़।"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "srNo": 20,
+      "brandName": "Nicorette 24hr Patch 21mg",
+      "genericName": "Nicotine Transdermal System",
+      "dosageForm": "Transdermal Patch",
+      "strength": "21 mg / 24 hr",
+      "dose": "Apply 1 patch every 24 hours to clean dry non-hairy skin",
+      "useIndication": "Smoking cessation aid to reduce nicotine withdrawal symptoms and cravings",
+      "directionForUse": "Apply immediately upon opening to intact skin on upper arm, chest, or hip. Press firmly for 10 seconds. Rotate application site daily. Do not smoke while wearing.",
+      "route": "Transdermal",
+      "manufacturer": "Johnson & Johnson Ltd.",
+      "batchNo": "NC77102",
+      "mfgDate": "11/2025",
+      "expDate": "10/2026",
+      "mfgLicenceNo": "MH/BOM/2023/1004",
+      "pageLink": "/medicine/20",
+      "sideEffects": {
+        "common": [
+          "Local application erythema",
+          "Vivid dreams",
+          "Insomnia",
+          "Headache"
+        ],
+        "serious": [
+          "Nicotine overdose symptoms (palpitations, nausea, cold sweats)",
+          "Severe contact allergy"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "निकोटीन पॅच (तंबाखू व सिगारेट सोडवण्यासाठी त्वचेवर लावायची पट्टी)",
+          "useIndication": "धूम्रपान व तंबाखूचे व्यसन सोडवणे आणि निकोटीनची तीव्र तल्लफ थांबवणे.",
+          "dose": "१ पॅच दर २४ तासांनी त्वचेवर चिकटवावा.",
+          "directionForUse": "छातीवर किंवा हाताच्या बाहेरील केस नसलेल्या कोरड्या त्वचेवर चिकटवावा. दररोज नवीन ठिकाणी लावावा. पट्टी लावलेली असताना विडी, सिगारेट किंवा तंबाखू खाऊ नये.",
+          "sideEffects": "लावलेल्या ठिकाणी खाज, झोपेत विचित्र स्वप्ने पडणे."
+        },
+        "hi": {
+          "genericName": "निकोटीन पैच (तंबाकू और सिगरेट छुड़ाने की पट्टी)",
+          "useIndication": "धूम्रपान, बीड़ी, सिगरेट और तंबाकू की लत छुड़ाने के लिए।",
+          "dose": "1 पैच हर 24 घंटे में त्वचा पर चिपकाएं।",
+          "directionForUse": "बांह या सीने की सूखी व बिना बालों वाली त्वचा पर चिपकाएं। पैच लगा होने पर तंबाकू या सिगरेट न पिएं।",
+          "sideEffects": "चिपकाने की जगह खुजली, नींद में सपने आना।"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "srNo": 21,
+      "brandName": "Asthalin Inhaler 100mcg",
+      "genericName": "Salbutamol Sulfate Inhalation Aerosol",
+      "dosageForm": "Inhaler",
+      "strength": "100 mcg / Actuation",
+      "dose": "1 to 2 puffs inhaled during acute breathlessness or asthma attack",
+      "useIndication": "Relief and prevention of bronchospasm in bronchial asthma and chronic obstructive pulmonary disease (COPD)",
+      "directionForUse": "Shake canister well. Exhale fully away from inhaler. Place mouthpiece between lips, depress canister while taking a slow deep breath, hold breath for 10 seconds. Rinse mouth with water after use.",
+      "route": "Inhalation",
+      "manufacturer": "Cipla Ltd.",
+      "batchNo": "AS90142",
+      "mfgDate": "10/2026",
+      "expDate": "09/2028",
+      "mfgLicenceNo": "HP/BAD/2021/602",
+      "pageLink": "/medicine/21",
+      "sideEffects": {
+        "common": [
+          "Fine tremor (especially hands)",
+          "Tachycardia",
+          "Palpitations",
+          "Headache"
+        ],
+        "serious": [
+          "Paradoxical bronchospasm",
+          "Severe hypokalemia",
+          "Cardiac arrhythmias"
+        ]
+      },
+      "translations": {
+        "mr": {
+          "genericName": "साल्ब्युटामॉल इनहेलर (दम्याचा पंप / श्वास मोकळा करणारा स्प्रे)",
+          "useIndication": "दम्याची धाप लागणे (अस्थमा), श्वास घेण्यास त्रास होणे, छातीत घरघर आवाज येणे.",
+          "dose": "१ ते २ पफ (फुंकर) धाप लागल्यावर किंवा डॉक्टरांच्या सल्ल्यानुसार.",
+          "directionForUse": "इनहेलर चांगला हलवावा. तोंडात धरून श्वास बाहेर सोडावा, नंतर दाबताच दीर्घ श्वास आत ओढावा आणि १० सेकंद रोखून धरावा. वापरल्यानंतर पाण्याने चूळ भरावी.",
+          "sideEffects": "हाताला किंचित कंप सुटणे, हृदयाचे ठोके जलद होणे, डोकेदुखी."
+        },
+        "hi": {
+          "genericName": "साल्बुटामोल इनहेलर (दमे का पंप / सांस की दवाई)",
+          "useIndication": "अस्थमा (दमा), सांस फूलना, छाती में घड़घड़ाहट और सांस लेने में तकलीफ होने पर तुरंत राहत।",
+          "dose": "1 से 2 पफ (स्प्रे) सांस फूलने पर डॉक्टर के निर्देशानुसार।",
+          "directionForUse": "इनहेलर को हिलाएं। मुंह से पूरी सांस बाहर निकालें, फिर पंप दबाते हुए गहरी सांस अंदर खींचें और 10 सेकंड रोकें। उपयोग के बाद कुल्ला करें।",
+          "sideEffects": "हाथ कांपना, दिल की धड़कन तेज होना, सिरदर्द।"
+        }
+      }
+    }
+  ]
+}

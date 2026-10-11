@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "होम",
+    "admin": "एडमिन डैशबोर्ड",
+    "scanner": "QR स्कैनर",
+    "login": "लॉग इन",
+    "logout": "लॉग आउट"
+  },
+  "home": {
+    "title": "स्मार्ट मेड QR",
+    "subtitle": "QR कोड के माध्यम से तुरंत दवा की व्यापक जानकारी प्राप्त करें",
+    "scanPrompt": "शुरू करने के लिए दवा का QR कोड स्कैन करें",
+    "searchPrompt": "या हमारे दवा डेटाबेस में खोजें"
+  },
+  "medicine": {
+    "details": "दवा का विवरण",
+    "notFound": "दवा नहीं मिली",
+    "genericName": "सामान्य नाम (Generic Name)",
+    "brandName": "ब्रांड का नाम",
+    "strength": "क्षमता (Strength)",
+    "dosageForm": "खुराक का रूप (Dosage Form)",
+    "route": "देने का मार्ग (Route)",
+    "useIndication": "उपयोग और संकेत",
+    "dose": "अनुशंसित खुराक",
+    "directionForUse": "उपयोग के लिए निर्देश",
+    "manufacturer": "निर्माता",
+    "batchNo": "बैच नंबर",
+    "mfgDate": "उत्पादन की तिथि",
+    "expDate": "समाप्ति तिथि (Expiry Date)",
+    "mfgLicenceNo": "निर्माण लाइसेंस नंबर",
+    "printQR": "QR कोड प्रिंट करें",
+    "downloadQR": "QR कोड डाउनलोड करें",
+    "valid": "वैध (उपयोग के लिए सुरक्षित)",
+    "expiringSoon": "जल्द ही समाप्त होने वाली है",
+    "expired": "समाप्त - उपयोग न करें"
+  },
+  "admin": {
+    "dashboard": "एडमिन डैशबोर्ड",
+    "addMedicine": "दवा जोड़ें",
+    "editMedicine": "दवा संपादित करें",
+    "deleteMedicine": "हटाएं",
+    "save": "परिवर्तन सहेजें",
+    "cancel": "रद्द करें",
+    "confirmDelete": "क्या आप वाकई इस दवा को हटाना चाहते हैं?",
+    "importExport": "आयात/निर्यात",
+    "exportCSV": "CSV निर्यात करें",
+    "importCSV": "CSV आयात करें",
+    "loginTitle": "एडमिन लॉग इन",
+    "password": "पासवर्ड",
+    "loginBtn": "लॉग इन करें",
+    "invalidCredentials": "अमान्य पासवर्ड"
+  },
+  "scanner": {
+    "title": "दवा का QR स्कैन करें",
+    "instruction": "अपने कैमरे को दवा की पैकेजिंग पर मौजूद QR कोड की ओर इंगित करें",
+    "permissionDenied": "कैमरा एक्सेस अस्वीकार कर दिया गया",
+    "scanError": "QR कोड स्कैन करने में त्रुटि",
+    "stopScan": "स्कैनिंग रोकें"
+  },
+  "verify": {
+    "title": "बैच सत्यापित करें",
+    "verified": "बैच सफलतापूर्वक सत्यापित",
+    "unverified": "बैच नहीं मिला या अमान्य है"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "एक त्रुटि हुई",
+    "success": "सफल",
+    "search": "खोजें...",
+    "language": "भाषा",
+    "close": "बंद करें",
+    "back": "पीछे"
+  },
+  "footer": {
+    "disclaimer": "प्रदान की गई जानकारी केवल संदर्भ के लिए है। चिकित्सा सलाह के लिए स्वास्थ्य देखभाल पेशेवर से परामर्श लें।"
+  }
+}
