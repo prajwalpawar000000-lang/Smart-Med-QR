@@ -1,0 +1,21 @@
+{
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/medicines/:id",
+      "destination": "/api/medicines.js"
+    },
+    {
+      "source": "/api/medicines",
+      "destination": "/api/medicines.js"
+    },
+    {
+      "source": "/api/verify/:batchNo",
+      "destination": "/api/verify.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
