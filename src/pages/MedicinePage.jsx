@@ -190,11 +190,9 @@ const MedicinePageContent = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-extrabold mb-1">{medicine.brandName}</h1>
             <p className="text-lg opacity-90">{medicine.genericName} • {medicine.strength}</p>
-            {isUsingMockData && (
-              <span className="inline-block mt-3 bg-white/20 px-3 py-0.5 rounded-full text-xs font-semibold border border-white/30">
-                Verified Research Sample
-              </span>
-            )}
+            <span className="inline-block mt-3 bg-white/20 px-3 py-0.5 rounded-full text-xs font-semibold border border-white/30">
+              Verified Drug Monograph
+            </span>
           </div>
         </div>
 

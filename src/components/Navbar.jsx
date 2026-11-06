@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, ScanLine, ShieldCheck, Settings, Menu, X, QrCode, HeartPulse, Sparkles } from 'lucide-react';
+import { Home, ScanLine, ShieldCheck, Settings, Menu, X, QrCode, HeartPulse, Search } from 'lucide-react';
 import LanguageToggle from './LanguageToggle';
 
 const Navbar = () => {
@@ -13,11 +13,11 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/', icon: <Home size={17} /> },
-    { name: '🏆 Prototype', path: '/#prototype-showcase', isAnchor: true, icon: <Sparkles size={16} className="text-amber-500" /> },
     { name: 'Scan QR', path: '/scan', icon: <ScanLine size={17} /> },
     { name: 'Verify Batch', path: '/verify', icon: <ShieldCheck size={17} /> },
-    { name: 'Side Effects & ADRs', path: '/side-effects', icon: <HeartPulse size={17} /> },
-    { name: 'Admin', path: '/admin', icon: <Settings size={17} /> },
+    { name: 'Medicine Search', path: '/#search-section', isAnchor: true, icon: <Search size={17} /> },
+    { name: 'Side Effects & ADR', path: '/side-effects', icon: <HeartPulse size={17} /> },
+    { name: 'Admin Login', path: '/admin/login', icon: <Settings size={17} /> },
   ];
 
   const isActive = (path) => {

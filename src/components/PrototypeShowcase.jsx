@@ -200,7 +200,7 @@ Common side effects: ${sideEffectsEn}. Thank you!`;
         </head>
         <body>
           <div class="specimen-card">
-            <div class="header-tag">Avishkar Research Prototype Specimen</div>
+            <div class="header-tag">MedQR Verified Medicine Package Label</div>
             <img src="${qrDataUrl}" class="qr-img" />
             <h1>${currentMed.brandName}</h1>
             <div class="strength">${currentMed.genericName} • ${currentMed.strength}</div>
@@ -226,18 +226,18 @@ Common side effects: ${sideEffectsEn}. Thank you!`;
       
       {/* SECTION HEADER */}
       <div className="text-center max-w-3xl mx-auto mb-10">
-        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 via-[#0B4F9C]/10 to-[#1E9E8F]/10 border border-amber-500/30 px-4 py-1.5 rounded-full text-xs font-bold text-amber-900 mb-3 shadow-xs">
-          <Award size={16} className="text-amber-600 animate-bounce" />
-          <span>Avishkar State Level Research Competition 2026</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-          <span className="text-[#0B4F9C] uppercase tracking-wider">Working Prototype</span>
+        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500/10 via-[#0B4F9C]/10 to-[#1E9E8F]/10 border border-teal-500/30 px-4 py-1.5 rounded-full text-xs font-bold text-teal-900 mb-3 shadow-xs">
+          <ShieldCheck size={16} className="text-[#1E9E8F]" />
+          <span>Interactive Clinical Formulations & QR Suite</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-[#1E9E8F]"></span>
+          <span className="text-[#0B4F9C] uppercase tracking-wider">Live Healthcare Suite</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
-          Final Working Prototype Showcase
+          Interactive Medicine & QR Formulation Explorer
         </h2>
         <p className="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
-          Test the complete MedQR technology stack live: scan packaging specimens, test the rural Marathi voice engine, inspect real-time ADRs, and verify batch authenticity.
+          Test the complete MedQR technology stack: scan high-resolution packaging QR labels, listen to multilingual voice guides, inspect real-time ADR warnings, and verify batch records.
         </p>
       </div>
 

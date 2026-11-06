@@ -81,8 +81,23 @@ export function useMedicines() {
     );
   };
 
-  const verifyBatch = async (batchNo) => {
-    return await api.verifyBatch(batchNo);
+  const verifyBatch = async (batchNo, optionalMedicineName = '') => {
+    return await api.verifyBatch(batchNo, optionalMedicineName);
+  };
+
+  const registerBatch = async (medicineId, batchData) => {
+    setLoading(true);
+    try {
+      const updatedMed = await api.registerBatch(medicineId, batchData);
+      setMedicines(prev => prev.map(m => m.id === Number(medicineId) ? updatedMed : m));
+      setIsUsingMockData(api.isUsingMockData);
+      return updatedMed;
+    } catch (err) {
+      setError(err.message || 'Failed to register batch');
+      throw err;
+    } finally {
+      setLoading(false);
+    }
   };
 
   return {
@@ -95,6 +110,7 @@ export function useMedicines() {
     updateMedicine,
     deleteMedicine,
     searchMedicines,
-    verifyBatch
+    verifyBatch,
+    registerBatch
   };
 }

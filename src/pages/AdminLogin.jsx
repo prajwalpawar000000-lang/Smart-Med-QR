@@ -62,7 +62,7 @@ const AdminLogin = () => {
           <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-6 text-xs text-blue-800 flex items-start gap-2.5">
             <ShieldCheck size={18} className="text-[#0B4F9C] shrink-0 mt-0.5" />
             <div>
-              <span className="font-bold">Authorized Competition Access:</span>
+              <span className="font-bold">Authorized Administrative Access:</span>
               <p className="mt-0.5 text-blue-700">
                 Default Password: <strong className="font-mono bg-white px-2 py-0.5 rounded border border-blue-200 text-[#0B4F9C] text-sm">admin123</strong>
               </p>

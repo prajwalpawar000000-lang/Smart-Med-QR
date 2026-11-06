@@ -1,4 +1,5 @@
 import mockData from '../data/mockMedicines.json';
+import { verifyBatchRecord, normalizeBatch } from './verificationEngine.js';
 
 const API_BASE = '';
 const TIMEOUT_MS = 2500;
@@ -239,21 +240,131 @@ export async function deleteMedicine(id) {
   return true;
 }
 
-export async function verifyBatch(batchNo) {
-  const normalize = (str) => String(str || '').replace(/[\s\-_]/g, '').toUpperCase();
-  const cleanBatch = normalize(batchNo);
+export async function verifyBatch(batchNo, optionalMedicineName = '') {
+  const cleanBatch = normalizeBatch(batchNo);
 
+  // 1. Try server endpoint first
   try {
-    const response = await fetchWithTimeout(`${API_BASE}/api/verify/${encodeURIComponent(cleanBatch)}`);
+    const response = await fetchWithTimeout(`${API_BASE}/api/verify`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ batchNo: cleanBatch, medicineName: optionalMedicineName })
+    });
     if (response.ok) {
-      const result = await response.json();
-      if (result && result.verified) return result;
+      const serverResult = await response.json();
+      if (serverResult && serverResult.statusCode) {
+        logVerificationAudit(serverResult);
+        return serverResult;
+      }
     }
   } catch (err) {
-    console.warn('Batch verification API failed, checking local data:', err);
+    console.warn('Batch verification API failed, running local clinical verification engine:', err);
   }
 
+  // 2. Client-side fallback engine using local cached/memory database
   const cached = getLocalCache() || memoryMedicines;
-  const med = cached.find((m) => normalize(m.batchNo) === cleanBatch);
-  return med ? { verified: true, medicine: { ...med } } : { verified: false };
+  const result = verifyBatchRecord(batchNo, optionalMedicineName, cached);
+  logVerificationAudit(result);
+  return result;
 }
+
+export async function registerBatch(medicineId, batchData) {
+  const numId = Number(medicineId);
+
+  // Try API POST /api/batches
+  try {
+    const response = await fetchWithTimeout(`${API_BASE}/api/batches`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ medicineId: numId, ...batchData })
+    });
+
+    if (response.ok) {
+      const resData = await response.json();
+      const updatedMed = resData.medicine || resData;
+      const idx = memoryMedicines.findIndex(m => m.id === numId);
+      if (idx !== -1) memoryMedicines[idx] = updatedMed;
+      setLocalCache(memoryMedicines);
+      return updatedMed;
+    } else {
+      const errJson = await response.json().catch(() => ({}));
+      if (errJson.error) {
+        throw new Error(errJson.error);
+      }
+    }
+  } catch (err) {
+    if (err.message && err.message.includes('Duplicate batch')) {
+      throw err;
+    }
+    console.warn('API POST /api/batches failed, falling back to local storage:', err);
+  }
+
+  // Local fallback addition
+  const idx = memoryMedicines.findIndex(m => m.id === numId);
+  if (idx === -1) throw new Error('Medicine not found in database');
+
+  const med = memoryMedicines[idx];
+  const cleanNew = normalizeBatch(batchData.batchNo);
+
+  // Check duplicate across memoryMedicines
+  for (const m of memoryMedicines) {
+    if (normalizeBatch(m.batchNo) === cleanNew) {
+      throw new Error(`Duplicate batch rejected: Batch "${batchData.batchNo}" is already registered under "${m.brandName}".`);
+    }
+    if (Array.isArray(m.batches)) {
+      const dup = m.batches.find(b => normalizeBatch(b.batchNo) === cleanNew);
+      if (dup) {
+        throw new Error(`Duplicate batch rejected: Batch "${batchData.batchNo}" is already registered under "${m.brandName}".`);
+      }
+    }
+  }
+
+  const batches = Array.isArray(med.batches) ? [...med.batches] : [];
+  const newBatch = {
+    batchNo: batchData.batchNo.trim().toUpperCase(),
+    mfgDate: batchData.mfgDate || '01/2025',
+    expDate: batchData.expDate.trim(),
+    mfgLicenceNo: batchData.mfgLicenceNo || med.mfgLicenceNo || 'LIC/2025/MED',
+    status: batchData.status || 'Active',
+    createdAt: new Date().toISOString()
+  };
+
+  batches.push(newBatch);
+  const updatedMed = { ...med, batches };
+  memoryMedicines[idx] = updatedMed;
+  setLocalCache(memoryMedicines);
+  return updatedMed;
+}
+
+export function logVerificationAudit(result) {
+  try {
+    const key = 'medqr_verification_history';
+    const raw = localStorage.getItem(key);
+    const list = raw ? JSON.parse(raw) : [];
+    const entry = {
+      id: result.verificationRef || `VRF-${Date.now().toString(36).toUpperCase()}`,
+      timestamp: result.verificationTimestamp || new Date().toISOString(),
+      batchNo: result.batch?.batchNo || result.enteredBatch || 'UNKNOWN',
+      medicineName: result.medicine?.brandName || result.enteredMedicine || 'N/A',
+      genericName: result.medicine?.genericName || '',
+      statusCode: result.statusCode,
+      status: result.status,
+      verified: !!result.verified,
+      title: result.title
+    };
+    const updated = [entry, ...list.filter(e => e.id !== entry.id)].slice(0, 50);
+    localStorage.setItem(key, JSON.stringify(updated));
+  } catch (e) {
+    console.warn('Could not record verification audit log:', e);
+  }
+}
+
+export function getVerificationHistory() {
+  try {
+    const raw = localStorage.getItem('medqr_verification_history');
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+

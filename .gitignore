@@ -36,3 +36,5 @@ Thumbs.db
 # Temporary / scratch files
 scratch/
 public_url.txt
+
+.vercel

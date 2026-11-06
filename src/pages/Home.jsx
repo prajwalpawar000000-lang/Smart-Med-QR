@@ -105,10 +105,10 @@ const Home = () => {
 
           <div className="max-w-5xl mx-auto text-center relative z-10">
             
-            {/* Competition Badge */}
+            {/* MedQR Independent Product Badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold border border-white/20 mb-5 shadow-inner text-cyan-200">
-              <Award size={16} className="text-amber-300" />
-              <span>Avishkar State Level Research Project • MedQR</span>
+              <ShieldCheck size={16} className="text-emerald-300" />
+              <span>MedQR – Smart Digital Medicine Assistant</span>
             </div>
 
             {/* Main Headline */}
@@ -119,66 +119,71 @@ const Home = () => {
               </span>
             </h1>
 
-            {/* Bilingual Simple Tagline */}
-            <p className="text-base sm:text-xl text-blue-100 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
-              औषधाचा QR कोड स्कॅन करा आणि <strong className="text-amber-300">डोस, वापर, दुष्परिणाम व मुदत तारीख</strong> मराठी व हिंदी आवाजात ऐका.
+            {/* Official Product Tagline */}
+            <p className="text-base sm:text-xl text-blue-100 max-w-3xl mx-auto mb-3 font-semibold leading-relaxed">
+              "Smart Medicine Identification. Secure Batch Verification. Better Patient Awareness."
             </p>
 
-            {/* 4 LARGE EASY-ACTION TOUCH CARDS (SUPER EASY TO USE) */}
+            {/* Product Description */}
+            <p className="text-sm sm:text-base text-blue-200/90 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
+              Scan a medicine QR code to access medicine information, identify registered batches, check expiry details, and understand important medicine precautions.
+            </p>
+
+            {/* 4 MAIN ACTION CARDS */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto mb-8 text-left">
               
-              {/* Card 1: Scan Camera */}
+              {/* Card 1: Scan Medicine QR */}
               <Link
                 to="/scan"
-                className="bg-gradient-to-br from-[#1E9E8F] to-emerald-600 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-white flex flex-col justify-between group border border-emerald-400/30"
+                className="bg-gradient-to-br from-[#1E9E8F] to-emerald-600 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-white flex flex-col justify-between group border border-emerald-400/30 cursor-pointer"
               >
                 <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                   <Camera size={26} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-black text-base sm:text-lg leading-tight">📸 स्कॅन करा</h3>
-                  <p className="text-[11px] sm:text-xs text-emerald-100 font-medium mt-0.5">Scan Camera QR</p>
+                  <h3 className="font-black text-base sm:text-lg leading-tight">Scan Medicine QR</h3>
+                  <p className="text-[11px] sm:text-xs text-emerald-100 font-medium mt-0.5">Camera & File Scanner</p>
                 </div>
               </Link>
 
-              {/* Card 2: Voice Simulator */}
-              <a
-                href="#prototype-showcase"
-                className="bg-gradient-to-br from-amber-500 to-amber-600 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-white flex flex-col justify-between group border border-amber-300/30"
-              >
-                <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <Volume2 size={26} className="text-white" />
-                </div>
-                <div>
-                  <h3 className="font-black text-base sm:text-lg leading-tight">🔊 आवाज ऐका</h3>
-                  <p className="text-[11px] sm:text-xs text-amber-100 font-medium mt-0.5">Marathi Voice Guide</p>
-                </div>
-              </a>
-
-              {/* Card 3: Batch Verify */}
+              {/* Card 2: Verify Medicine Batch */}
               <Link
                 to="/verify"
-                className="bg-gradient-to-br from-[#0B4F9C] to-blue-700 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-white flex flex-col justify-between group border border-blue-400/30"
+                className="bg-gradient-to-br from-[#0B4F9C] to-blue-700 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-white flex flex-col justify-between group border border-blue-400/30 cursor-pointer"
               >
                 <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                   <ShieldCheck size={26} className="text-cyan-200" />
                 </div>
                 <div>
-                  <h3 className="font-black text-base sm:text-lg leading-tight">🛡️ बॅच तपासा</h3>
-                  <p className="text-[11px] sm:text-xs text-blue-100 font-medium mt-0.5">Verify Batch No</p>
+                  <h3 className="font-black text-base sm:text-lg leading-tight">Verify Medicine Batch</h3>
+                  <p className="text-[11px] sm:text-xs text-blue-100 font-medium mt-0.5">Anti-Counterfeit Check</p>
                 </div>
               </Link>
 
-              {/* Card 4: ADR & Side Effects */}
+              {/* Card 3: Search Medicine */}
+              <a
+                href="#search-section"
+                className="bg-gradient-to-br from-amber-500 to-amber-600 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-white flex flex-col justify-between group border border-amber-300/30 cursor-pointer"
+              >
+                <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <Search size={26} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="font-black text-base sm:text-lg leading-tight">Search Medicine</h3>
+                  <p className="text-[11px] sm:text-xs text-amber-100 font-medium mt-0.5">Directory & Monograph</p>
+                </div>
+              </a>
+
+              {/* Card 4: Side Effects & ADR */}
               <Link
                 to="/side-effects"
-                className="bg-gradient-to-br from-rose-600 to-rose-700 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-white flex flex-col justify-between group border border-rose-400/30"
+                className="bg-gradient-to-br from-rose-600 to-rose-700 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-white flex flex-col justify-between group border border-rose-400/30 cursor-pointer"
               >
                 <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                   <HeartPulse size={26} className="text-rose-200" />
                 </div>
                 <div>
-                  <h3 className="font-black text-base sm:text-lg leading-tight">⚠️ साइड इफेक्ट्स</h3>
+                  <h3 className="font-black text-base sm:text-lg leading-tight">Side Effects & ADR</h3>
                   <p className="text-[11px] sm:text-xs text-rose-100 font-medium mt-0.5">Adverse Reactions</p>
                 </div>
               </Link>
@@ -250,20 +255,18 @@ const Home = () => {
         {/* FINAL RESEARCH PROTOTYPE SHOWCASE SECTION */}
         <PrototypeShowcase medicines={medicines} />
 
-        {/* DEMO DATA BANNER (Clean pill style) */}
-        {isUsingMockData && (
-          <div className="max-w-4xl mx-auto px-4 mb-10">
-            <div className="bg-amber-50 border border-amber-200 text-amber-900 px-4 py-2.5 rounded-2xl flex items-center justify-between text-xs">
-              <div className="flex items-center gap-2">
-                <AlertTriangle size={16} className="text-amber-600 shrink-0" />
-                <span><strong>Avishkar Evaluation Environment:</strong> Loaded with verified medicine monographs, Adverse Drug Reaction (ADR) profiles, and batch records.</span>
-              </div>
-              <Link to="/side-effects" className="font-bold underline text-amber-800 shrink-0 hidden sm:inline">
-                Open ADR Checker
-              </Link>
+        {/* VERIFIED DATABASE BANNER */}
+        <div className="max-w-4xl mx-auto px-4 mb-10">
+          <div className="bg-teal-50 border border-teal-200 text-teal-900 px-4 py-2.5 rounded-2xl flex items-center justify-between text-xs shadow-xs">
+            <div className="flex items-center gap-2">
+              <ShieldCheck size={16} className="text-teal-600 shrink-0" />
+              <span><strong>MedQR Verified Platform:</strong> Loaded with verified drug monographs, Adverse Drug Reaction (ADR) profiles, and batch validation records.</span>
             </div>
+            <Link to="/side-effects" className="font-bold underline text-teal-800 shrink-0 hidden sm:inline">
+              Open ADR Checker
+            </Link>
           </div>
-        )}
+        </div>
 
         {/* SAMPLE MEDICINES SHOWCASE CARDS */}
         <section className="max-w-6xl mx-auto px-4 mb-16">

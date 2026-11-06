@@ -46,7 +46,7 @@ function saveMedicinesData(medicinesList) {
   try {
     ensureDataFile();
     const payload = {
-      disclaimer: "⚠️ MedQR Live Database • Avishkar State Research Project",
+      disclaimer: "MedQR Live Database • Smart Medicine Assistant",
       medicines: medicinesList
     };
     fs.writeFileSync(DATA_FILE, JSON.stringify(payload, null, 2), 'utf-8');
@@ -99,6 +99,173 @@ function readRequestBody(req) {
     });
     req.on('error', reject);
   });
+}
+
+function normalizeBatch(str) {
+  return String(str || '').replace(/[\s\-_]/g, '').trim().toUpperCase();
+}
+
+function parseFlexibleDate(dateStr) {
+  if (!dateStr || typeof dateStr !== 'string') return null;
+  const clean = dateStr.trim();
+  if (/^\d{4}-\d{1,2}(-\d{1,2})?$/.test(clean)) {
+    const parts = clean.split('-').map(Number);
+    return new Date(parts[0], parts[1] - 1, parts[2] || 1);
+  }
+  if (/^\d{1,2}\/\d{4}$/.test(clean)) {
+    const [month, year] = clean.split('/').map(Number);
+    return new Date(year, month, 0, 23, 59, 59);
+  }
+  if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(clean)) {
+    const [day, month, year] = clean.split('/').map(Number);
+    return new Date(year, month - 1, day);
+  }
+  const d = new Date(clean);
+  return isNaN(d.getTime()) ? null : d;
+}
+
+function evaluateExpiry(expDateStr) {
+  const parsed = parseFlexibleDate(expDateStr);
+  if (!parsed) return { status: 'safe', daysRemaining: 365, formattedExpDate: expDateStr };
+  const diffTime = parsed.getTime() - Date.now();
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  if (diffDays < 0) return { status: 'expired', daysOverdue: Math.abs(diffDays), formattedExpDate: expDateStr };
+  if (diffDays <= 60) return { status: 'expiring', daysRemaining: diffDays, formattedExpDate: expDateStr };
+  return { status: 'safe', daysRemaining: diffDays, formattedExpDate: expDateStr };
+}
+
+function runVerification(rawBatch, optionalMedicineName, medicinesList) {
+  const timestamp = new Date().toISOString();
+  const refCode = `VRF-${Date.now().toString(36).toUpperCase()}`;
+
+  if (!rawBatch || typeof rawBatch !== 'string' || rawBatch.trim().length < 2) {
+    return {
+      status: 'INVALID',
+      statusCode: 'E',
+      verified: false,
+      title: 'Invalid Information',
+      message: 'Please enter a valid medicine batch number to begin verification.',
+      verificationTimestamp: timestamp,
+      verificationRef: refCode
+    };
+  }
+
+  const cleanBatch = normalizeBatch(rawBatch);
+  let matchedMedicine = null;
+  let matchedBatch = null;
+
+  for (const med of medicinesList) {
+    if (normalizeBatch(med.batchNo) === cleanBatch) {
+      matchedMedicine = med;
+      matchedBatch = {
+        batchNo: med.batchNo,
+        mfgDate: med.mfgDate,
+        expDate: med.expDate,
+        mfgLicenceNo: med.mfgLicenceNo,
+        status: 'Active'
+      };
+      break;
+    }
+    if (Array.isArray(med.batches)) {
+      const foundInBatches = med.batches.find(b => normalizeBatch(b.batchNo) === cleanBatch);
+      if (foundInBatches) {
+        matchedMedicine = med;
+        matchedBatch = { ...foundInBatches };
+        break;
+      }
+    }
+  }
+
+  if (!matchedMedicine || !matchedBatch) {
+    return {
+      status: 'NOT_FOUND',
+      statusCode: 'B',
+      verified: false,
+      title: 'Batch Not Found',
+      message: 'Batch number not found in the registered MedQR database. Please verify the details with the manufacturer or pharmacist.',
+      enteredBatch: rawBatch.trim().toUpperCase(),
+      verificationTimestamp: timestamp,
+      verificationRef: refCode
+    };
+  }
+
+  if (optionalMedicineName && optionalMedicineName.trim()) {
+    const query = optionalMedicineName.trim().toLowerCase();
+    const brand = String(matchedMedicine.brandName || '').toLowerCase();
+    const generic = String(matchedMedicine.genericName || '').toLowerCase();
+    const matches = brand.includes(query) || query.includes(brand) || generic.includes(query) || query.includes(generic);
+
+    if (!matches) {
+      return {
+        status: 'MISMATCH',
+        statusCode: 'E',
+        verified: false,
+        title: 'Medicine Mismatch Detected',
+        message: `Batch "${matchedBatch.batchNo}" is registered in MedQR, but it belongs to "${matchedMedicine.brandName} (${matchedMedicine.genericName})" instead of the specified medicine "${optionalMedicineName}". Please inspect the packaging carefully.`,
+        enteredBatch: matchedBatch.batchNo,
+        enteredMedicine: optionalMedicineName,
+        actualMedicine: {
+          id: matchedMedicine.id,
+          brandName: matchedMedicine.brandName,
+          genericName: matchedMedicine.genericName,
+          manufacturer: matchedMedicine.manufacturer
+        },
+        verificationTimestamp: timestamp,
+        verificationRef: refCode
+      };
+    }
+  }
+
+  const expEvaluation = evaluateExpiry(matchedBatch.expDate);
+  if (expEvaluation.status === 'expired') {
+    return {
+      status: 'EXPIRED',
+      statusCode: 'C',
+      verified: false,
+      isExpired: true,
+      title: 'Expired Medicine Warning',
+      message: 'WARNING: This medicine batch has passed its expiry date. Do not use it.',
+      medicine: matchedMedicine,
+      batch: matchedBatch,
+      daysOverdue: expEvaluation.daysOverdue || 1,
+      formattedExpDate: expEvaluation.formattedExpDate,
+      verificationTimestamp: timestamp,
+      verificationRef: refCode
+    };
+  }
+
+  if (expEvaluation.status === 'expiring') {
+    return {
+      status: 'EXPIRING_SOON',
+      statusCode: 'D',
+      verified: true,
+      isExpiringSoon: true,
+      title: 'Expiry Approaching',
+      message: `Notice: This medicine batch will expire soon in ${expEvaluation.daysRemaining} days (Expiry: ${expEvaluation.formattedExpDate}). Complete the prescribed course before expiration or consult your pharmacist.`,
+      medicine: matchedMedicine,
+      batch: matchedBatch,
+      daysRemaining: expEvaluation.daysRemaining,
+      formattedExpDate: expEvaluation.formattedExpDate,
+      verificationTimestamp: timestamp,
+      verificationRef: refCode
+    };
+  }
+
+  return {
+    status: 'VERIFIED',
+    statusCode: 'A',
+    verified: true,
+    isExpiringSoon: false,
+    isExpired: false,
+    title: 'Verified Batch',
+    message: 'Authentic & Verified Batch Record. This batch is officially registered in the MedQR trusted database and is within its valid shelf life.',
+    medicine: matchedMedicine,
+    batch: matchedBatch,
+    daysRemaining: expEvaluation.daysRemaining,
+    formattedExpDate: expEvaluation.formattedExpDate,
+    verificationTimestamp: timestamp,
+    verificationRef: refCode
+  };
 }
 
 const server = http.createServer(async (req, res) => {
@@ -266,22 +433,155 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  // 6. GET /api/verify/:batchNo
-  if (req.method === 'GET' && pathname.startsWith('/api/verify/')) {
-    const rawBatch = decodeURIComponent(pathname.replace('/api/verify/', '')).trim();
-    const cleanBatch = rawBatch.replace(/[\s\-_]/g, '').toUpperCase();
+  // 6. GET & POST /api/verify
+  if (pathname === '/api/verify' || pathname.startsWith('/api/verify/')) {
+    const list = getMedicinesData();
+    let targetBatch = '';
+    let optionalMedicine = '';
+
+    if (req.method === 'POST') {
+      try {
+        const body = await readRequestBody(req);
+        targetBatch = body.batchNo || '';
+        optionalMedicine = body.medicineName || '';
+      } catch (e) {
+        res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: 'Invalid JSON payload' }));
+        return;
+      }
+    } else if (req.method === 'GET') {
+      if (pathname.startsWith('/api/verify/')) {
+        targetBatch = decodeURIComponent(pathname.replace('/api/verify/', '')).trim();
+      } else {
+        targetBatch = parsedUrl.searchParams.get('batchNo') || '';
+      }
+      optionalMedicine = parsedUrl.searchParams.get('medicineName') || '';
+    }
+
+    const verificationResult = runVerification(targetBatch, optionalMedicine, list);
+    res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+    res.end(JSON.stringify(verificationResult));
+    return;
+  }
+
+  // 7. GET & POST /api/batches
+  if (pathname === '/api/batches' || pathname === '/api/batches/') {
     const list = getMedicinesData();
 
-    const normalize = (str) => String(str || '').replace(/[\s\-_]/g, '').toUpperCase();
-    const found = list.find(m => normalize(m.batchNo) === cleanBatch);
-
-    res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-    if (found) {
-      res.end(JSON.stringify({ verified: true, medicine: found }));
-    } else {
-      res.end(JSON.stringify({ verified: false }));
+    if (req.method === 'GET') {
+      const allBatches = [];
+      for (const med of list) {
+        if (med.batchNo) {
+          allBatches.push({
+            batchNo: med.batchNo,
+            medicineId: med.id,
+            brandName: med.brandName,
+            genericName: med.genericName,
+            mfgDate: med.mfgDate,
+            expDate: med.expDate,
+            mfgLicenceNo: med.mfgLicenceNo,
+            status: 'Active',
+            isPrimary: true
+          });
+        }
+        if (Array.isArray(med.batches)) {
+          for (const b of med.batches) {
+            if (normalizeBatch(b.batchNo) !== normalizeBatch(med.batchNo)) {
+              allBatches.push({
+                ...b,
+                medicineId: med.id,
+                brandName: med.brandName,
+                genericName: med.genericName,
+                isPrimary: false
+              });
+            }
+          }
+        }
+      }
+      res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify(allBatches));
+      return;
     }
-    return;
+
+    if (req.method === 'POST') {
+      try {
+        const body = await readRequestBody(req);
+        const { medicineId, batchNo, mfgDate, expDate, mfgLicenceNo, status } = body;
+
+        if (!medicineId || !batchNo || !expDate) {
+          res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+          res.end(JSON.stringify({ error: 'Medicine ID, Batch Number, and Expiry Date are required' }));
+          return;
+        }
+
+        const cleanNewBatch = normalizeBatch(batchNo);
+        if (cleanNewBatch.length < 2) {
+          res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+          res.end(JSON.stringify({ error: 'Batch number must be at least 2 characters long' }));
+          return;
+        }
+
+        const medIndex = list.findIndex(m => m.id === Number(medicineId));
+        if (medIndex === -1) {
+          res.writeHead(404, { 'Content-Type': 'application/json; charset=utf-8' });
+          res.end(JSON.stringify({ error: 'Medicine not found' }));
+          return;
+        }
+
+        // Duplicate Check across ALL medicines and batches
+        for (const m of list) {
+          if (normalizeBatch(m.batchNo) === cleanNewBatch) {
+            res.writeHead(409, { 'Content-Type': 'application/json; charset=utf-8' });
+            res.end(JSON.stringify({
+              error: `Duplicate batch rejected: Batch "${batchNo}" is already registered under "${m.brandName}" (ID: ${m.id}).`
+            }));
+            return;
+          }
+          if (Array.isArray(m.batches)) {
+            const dup = m.batches.find(b => normalizeBatch(b.batchNo) === cleanNewBatch);
+            if (dup) {
+              res.writeHead(409, { 'Content-Type': 'application/json; charset=utf-8' });
+              res.end(JSON.stringify({
+                error: `Duplicate batch rejected: Batch "${batchNo}" is already registered under "${m.brandName}" (ID: ${m.id}).`
+              }));
+              return;
+            }
+          }
+        }
+
+        const targetMed = list[medIndex];
+        const batches = Array.isArray(targetMed.batches) ? [...targetMed.batches] : [];
+
+        const newBatchRecord = {
+          batchNo: batchNo.trim().toUpperCase(),
+          mfgDate: mfgDate || '01/2025',
+          expDate: expDate.trim(),
+          mfgLicenceNo: mfgLicenceNo || targetMed.mfgLicenceNo || 'LIC/2025/MED',
+          status: status || 'Active',
+          createdAt: new Date().toISOString()
+        };
+
+        batches.push(newBatchRecord);
+        const updatedMed = { ...targetMed, batches };
+        list[medIndex] = updatedMed;
+
+        saveMedicinesData(list);
+
+        res.writeHead(201, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({
+          success: true,
+          message: `Batch "${batchNo}" successfully registered to ${targetMed.brandName}`,
+          batch: newBatchRecord,
+          medicine: updatedMed
+        }));
+        return;
+      } catch (err) {
+        console.error('Error processing batch registration:', err);
+        res.writeHead(500, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: 'Internal server error while saving batch' }));
+        return;
+      }
+    }
   }
 
   // ==========================================

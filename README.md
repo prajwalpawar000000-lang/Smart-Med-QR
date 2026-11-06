@@ -31,11 +31,10 @@ A web application that generates QR codes for medical inventory, allowing instan
 
 ## 📖 About
 
-**Smart MED QR** addresses the critical issue of medicine mismanagement, confusion, and adverse drug events due to lack of accessible information. Often, patient instruction leaflets are lost, or older adults struggle to read the microscopic print on medicine strips. 
+**MedQR – Smart Digital Medicine Assistant** addresses the critical issue of medicine mismanagement, confusion, counterfeit batches, and adverse drug events due to lack of accessible information. Often, patient instruction leaflets are lost, or older adults struggle to read the microscopic print on medicine strips.
 
-This project was built for the **Avishkar State Level Research Competition**. 
-
-Our philosophy is simple:
+MedQR operates under the principle:
+**"Smart Medicine Identification. Secure Batch Verification. Better Patient Awareness."**
 - 📱 **Scan:** Use any standard smartphone camera.
 - 🧠 **Know:** Instantly retrieve generic names, strengths, and expiry dates.
 - 💊 **Use:** Read clear, large-font directions and dosages.
@@ -220,8 +219,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 ## 🙏 Acknowledgements
-
-- Built for the **Avishkar State Level Research Competition**.
+ 
 - Icons provided by [Lucide React](https://lucide.dev/).
 - QR code generation by [qrcode.react](https://github.com/zpao/qrcode.react).
 - Styling framework by [Tailwind CSS](https://tailwindcss.com/).

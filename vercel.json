@@ -14,6 +14,18 @@
       "destination": "/api/verify.js"
     },
     {
+      "source": "/api/verify",
+      "destination": "/api/verify.js"
+    },
+    {
+      "source": "/api/batches/:id",
+      "destination": "/api/batches.js"
+    },
+    {
+      "source": "/api/batches",
+      "destination": "/api/batches.js"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

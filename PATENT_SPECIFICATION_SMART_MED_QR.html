@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patent Specification - Smart Med QR</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 20mm 20mm 20mm;
+  }
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #111;
+    margin: 0;
+    padding: 25px 40px;
+    background-color: #fff;
+  }
+  .title-block {
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.35;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+  }
+  h2.section-header {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  h2.section-header::before {
+    content: "➢ ";
+    margin-right: 6px;
+    font-size: 13pt;
+  }
+  h3.subsection-header {
+    font-size: 11.5pt;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 6px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  ul {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding-left: 24px;
+  }
+  li {
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+  .flowchart {
+    text-align: center;
+    font-weight: bold;
+    margin: 18px 0;
+    line-height: 1.8;
+  }
+  .flowchart .step {
+    display: inline-block;
+    padding: 4px 14px;
+    border: 1px solid #333;
+    background: #fdfdfd;
+    margin: 3px 0;
+    border-radius: 4px;
+  }
+  .claim-item {
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+  .claim-title {
+    font-weight: bold;
+  }
+  .figure-box {
+    border: 1px solid #777;
+    background: #fafafa;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9.5pt;
+    white-space: pre;
+    line-height: 1.25;
+    border-radius: 4px;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+  @media print {
+    body {
+      padding: 0;
+    }
+    .no-print {
+      display: none;
+    }
+  }
+  .action-bar {
+    position: sticky;
+    top: 0;
+    background: #0B4F9C;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -25px -40px 25px -40px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .print-btn {
+    background: #10B981;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="action-bar no-print">
+  <div>
+    <strong>MedQR Patent Specification Document</strong> — Ready for Print / Save as PDF
+  </div>
+  <button class="print-btn" onclick="window.print()">🖨️ Print to PDF (Ctrl + P)</button>
+</div>
+
+<div class="title-block">
+  A Smart Quick-Response (QR) Enabled Digital Pharmaceutical Packaging and Multilingual Voice-Assisted Dispensing System for Real-Time Identification, Expiration Alerting, and Safe Medication Administration
+</div>
+
+<h2 class="section-header">FIELD OF THE INVENTION</h2>
+<p>
+The present invention relates generally to pharmaceutical packaging, digital health informatics, assistive drug-dispensing technologies, and point-of-care patient safety systems. More particularly, the invention relates to an integrated physical-to-digital pharmaceutical labeling and dispensing verification system comprising high-density error-corrected Quick Response (QR) matrix identifiers applied to primary and secondary pharmaceutical packaging across multiple dosage forms, coupled with a serverless, client-resilient web engine that delivers instant regional voice synthesis, real-time expiration validation, and adverse drug reaction (ADR) pharmacovigilance safeguards without requiring proprietary software downloads.
+</p>
+<p>
+Even more particularly, the invention relates to an intelligent medication assistance system adapted to bridge critical health literacy, sensory, and linguistic barriers for geriatric, illiterate, rural, and visually impaired individuals by translating physical pharmaceutical unit containers into interactive, audible, and multilingual digital monographs.
+</p>
+
+<h2 class="section-header">BACKGROUND OF THE INVENTION</h2>
+<p>
+Pharmaceutical preparations are manufactured, packaged, and dispensed across a vast spectrum of physical dosage forms including tablets, capsules, oral syrups, dry suspensions, parenteral injections, ophthalmic (eye) drops, otic (ear) drops, topical ointments, creams, transdermal gels, oral rehydration salts (ORS) powders, probiotic sachets, rectal suppositories, transdermal patches, and pressurized metered-dose inhalers.
+</p>
+<p>
+In conventional pharmaceutical packaging, statutory drug information—comprising generic chemical composition, active therapeutic strength, indications for use, batch identification, manufacturing and expiration dates, dosing schedules, and storage warnings—is printed directly onto external paperboard cartons, plastic vials, blister foils, ampoules, or miniature paper Package Inserts (Patient Information Leaflets - PIL).
+</p>
+<p>
+Such conventional packaging exhibits profound, life-threatening systemic limitations:
+</p>
+<ul>
+  <li><strong>Microscopic Typographical Constraints:</strong> Due to severe surface area limitations on blister strips, small ampoules, and eye/ear dropper bottles, regulatory text is invariably compressed into microscopic font sizes (often 4 to 6 points) that are virtually unreadable by elderly (geriatric) patients, presbyopic individuals, and those with mild to moderate visual impairments.</li>
+  <li><strong>Severe Linguistic Barriers:</strong> In multicultural and multilingual developing nations such as India, pharmaceutical labeling is overwhelmingly printed in English or standard technical terminology. A significant portion of the rural population, migrant workers, and low-literacy patients cannot decipher English pharmacological instructions, leading to frequent administration errors.</li>
+  <li><strong>Loss or Misplacement of Paper Inserts:</strong> Paper package inserts are almost universally discarded immediately upon opening the carton, depriving patients of critical dosing instructions, contraindications, and emergency safety guidelines during ongoing therapy.</li>
+  <li><strong>Silent Expiration Hazard:</strong> Expiry dates are frequently embossed on crimped edges of blister packs or faintly ink-stamped on bottle bases, which easily fade, scratch off, or escape visual detection. Accidental ingestion of expired antibiotics or degradation products poses severe toxicological and clinical hazards.</li>
+  <li><strong>Confusion Between Analogous Packaging:</strong> Containers of varying dosage forms (such as eye drops versus ear drops, or dermatological creams versus oral gels) frequently share nearly identical cylindrical geometry, plastic material, and cap closures, leading to catastrophic administration at incorrect anatomical sites.</li>
+</ul>
+<p>
+While recent attempts have introduced commercial 2D barcodes or standard commercial QR codes on product cartons, existing solutions suffer from significant shortcomings: they typically redirect users to commercial marketing websites, demand the pre-installation of heavy native smartphone applications requiring high-end hardware, or fail completely under rural conditions characterized by intermittent internet connectivity.
+</p>
+<p>
+Therefore, there exists an urgent, unmet clinical and technological need for a standardized, user-centric, and voice-assisted digital medicine labeling system capable of instantly conveying critical therapeutic specifications, expiry status, and pharmacovigilance intelligence across all pharmaceutical dosage forms directly to standard smartphone web browsers.
+</p>
+
+<h2 class="section-header">PROBLEM STATEMENT</h2>
+<p>
+The present invention addresses the widespread prevalence of medication errors, accidental toxic ingestions, and patient non-compliance resulting from illegible, lost, English-restricted, or physically ambiguous conventional pharmaceutical packaging.
+</p>
+<p>
+The invention aims to provide an intelligent, interactive physical-to-digital packaging and assistance platform that bridges sensory, age, and language barriers through high-contrast QR matrix indicators, automatic Marathi/Hindi/English phonetic voice guidance, real-time expiration badges, and comprehensive adverse drug reaction alerts across fifteen diverse dosage formulations.
+</p>
+
+<h2 class="section-header">OBJECTIVES OF THE INVENTION</h2>
+<ul>
+  <li>To provide a standardized smart dynamic QR labeling system applicable to 15+ pharmaceutical dosage forms.</li>
+  <li>To eliminate patient dependence on microscopic printed labels and disposable paper leaflets.</li>
+  <li>To provide instant, zero-install audio readout in regional languages (specifically Marathi, Hindi, and English) calibrated at a slow, crystal-clear pace (0.8x to 0.85x speed) for elderly and illiterate rural patients.</li>
+  <li>To provide an automated, real-time calculation and visual flagging of medication expiration status (Valid, Expiring Soon within 60 days, and Expired).</li>
+  <li>To provide structured, easy-to-comprehend directions for specialized dosage forms (such as inhaler actuation, eye drop instillation, patch application, and powder reconstitution).</li>
+  <li>To establish a dedicated Adverse Drug Reaction (ADR) pharmacovigilance screening interface categorizing common mild side effects versus severe toxic reactions.</li>
+  <li>To implement an instantaneous batch verification mechanism to detect unverified, mislabeled, or counterfeit pharmaceutical products.</li>
+  <li>To ensure robust offline and low-bandwidth client resiliency via automated Progressive Web App (PWA) service worker caching and local memory hydration.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2 class="section-header">SUMMARY OF THE INVENTION</h2>
+<p>
+The present invention provides a smart Quick-Response (QR) enabled digital pharmaceutical packaging and assistance system comprising a physical high-contrast 2D matrix identifier affixed to or integrated into a pharmaceutical container, and a synchronized cloud-and-client digital monograph engine.
+</p>
+<p>
+The system encompasses fifteen distinct dosage forms across twenty-one representative formulations, including Tablets, Capsules, Oral Syrups, Dry Suspensions, Parenteral Injections, Ophthalmic Eye Drops, Otic Ear Drops, Topical Ointments, Dermatological Creams, Anti-inflammatory Gels, Rehydration Powders, Probiotic Sachets, Rectal Suppositories, Transdermal Patches, and Metered-Dose Inhalers.
+</p>
+<p>
+Each container incorporates a physical Level-Q (25% error correction redundancy) QR label encoding an immutable, unique resource locator. Upon optical capture by standard smartphone optics (without third-party app installations), the system executes a multi-stage validation sequence:
+</p>
+<ol>
+  <li><strong>Instant Synchronous Hydration:</strong> Resolves medicine metadata immediately from local storage cache or compiled clinical memory to guarantee zero blank-screen latency.</li>
+  <li><strong>Real-Time Chromatic Expiration Assessment:</strong> Dynamically computes the calendar delta between the device epoch and the formulation's expiration date, applying green ("Valid"), amber ("Expiring Soon"), or pulsating danger red ("Expired") visual badges.</li>
+  <li><strong>Phonetic Vernacular Voice Engine:</strong> Synthesizes natural speech in regional dialects (Marathi, Hindi, English) detailing the drug identity, therapeutic indication, exact dosage, administration methodology, and precautions.</li>
+  <li><strong>Pharmacovigilance ADR Matrix:</strong> Segregates known side effects into common self-limiting symptoms versus severe adverse reactions, complete with emergency medical notices and direct linkages to the Pharmacovigilance Programme of India (PvPI).</li>
+  <li><strong>Crash-Proof Error Boundary:</strong> Isolates rendering errors to ensure patients are never left with an uninformative blank screen.</li>
+</ol>
+
+<h2 class="section-header">DETAILED DESCRIPTION OF THE INVENTION</h2>
+<p>
+The system according to the present invention comprises five interconnected functional subsystems:
+</p>
+
+<h3 class="subsection-header">Subsystem 1: High-Density Physical Matrix Labeling Assembly</h3>
+<p>
+The physical identifier comprises a square 2D Quick Response matrix generated with Level-Q error correction, permitting up to 25% data reconstruction in the event of label scuffing, oil smearing, chemical exposure, or partial tearing. The matrix is bounded by a standardized 2-module quiet zone and configured with deep-contrast dark modules (#000000 or #0A2540) on a high-reflectance pure white substrate (#FFFFFF). The label encodes a normalized RESTful endpoint linked to the formulation's verified record.
+</p>
+
+<h3 class="subsection-header">Subsystem 2: Universal Device-Agnostic Web Client & Routing Core</h3>
+<p>
+The user-facing software core is implemented using modern component-driven reactive web technologies (React/Vite) wrapped within a Progressive Web App (PWA) service worker manifest. Navigation utilizes declarative client-side routing (`/medicine/:id`, `/verify/:batchNo`, `/side-effects`, `/scan`). The client executes clean multi-criteria identity resolution: matching via exact numerical identifier, normalized alphanumeric batch number (stripping hyphens and spaces), or fuzzy brand/generic nomenclature.
+</p>
+
+<h3 class="subsection-header">Subsystem 3: Multilingual Phonetic Speech Synthesis Subsystem</h3>
+<p>
+To eliminate reading barriers, the invention incorporates a dedicated Web Speech API synthesizer. Speech synthesis utterances are generated from curated natural-language grammatical templates in Marathi (`mr-IN`), Hindi (`hi-IN`), and English (`en-IN`). Crucially, the synthesizer operates at a decelerated playback rate of 0.80x to 0.85x normal speed with acoustic pitch stabilization to optimize audibility for elderly presbycusis patients and low-literacy users listening through low-cost mobile phone speakers in ambient rural noise.
+</p>
+
+<h3 class="subsection-header">Subsystem 4: Dynamic Expiration Verification Subsystem</h3>
+<p>
+Unlike static printed expiration dates that require cognitive math from the patient, the system executes real-time programmatic date parsing. By parsing the formulation's `expDate` (YYYY-MM-DD) against the client's localized current date, the engine assigns real-time status:
+</p>
+<ul>
+  <li><em>Status "Valid":</em> Delta &gt; 60 days. Displayed in emerald green (#16A34A) with affirmative auditory verification.</li>
+  <li><em>Status "Expiring Soon":</em> 0 &le; Delta &le; 60 days. Displayed in cautionary amber (#D97706) with proactive auditory warning to replenish supply.</li>
+  <li><em>Status "Expired":</em> Delta &lt; 0 days. Displayed in high-visibility pulsating crimson red (#DC2626) accompanied by an assertive audio warning ("धोका! हे औषध एक्सपायर झाले आहे, कृपया वापरू नका!").</li>
+</ul>
+
+<h3 class="subsection-header">Subsystem 5: Pharmacovigilance & Adverse Drug Reaction (ADR) Matrix</h3>
+<p>
+The formulation display incorporates a standardized safety card breaking down pharmacovigilance data into: (a) Common / Mild Side Effects; (b) Severe Adverse Drug Reactions (ADRs); (c) Safety Precautions & Warnings; (d) Clinical Contraindications; and (e) Emergency Medical Action Protocols with one-touch assistance linkages.
+</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-header">FIVE USER-CENTRIC FACTORS</h2>
+
+<h3 class="subsection-header">1. Geriatric Persons (ज्येष्ठ नागरिक)</h3>
+<p>
+Elderly individuals managing chronic illnesses (hypertension, diabetes, osteoarthritis) frequently suffer from visual presbyopia, trembling hands, and polypharmacy confusion. The invention provides large touch targets (&gt;48px), high-contrast visual status cards, simplified vernacular language, and one-tap slow voice readout, preventing accidental dosage doubling or ingestion of expired drugs.
+</p>
+
+<h3 class="subsection-header">2. Illiterate and Low-Literacy Patients (निरक्षर व ग्रामीण रुग्ण)</h3>
+<p>
+Patients unable to read Latin-script pharmaceutical nomenclature or complex chemical names can simply point their smartphone camera at the packaging label. The system automatically speaks aloud in native Marathi or Hindi, clearly explaining what the medicine is for ("कशासाठी घ्यायचे?"), how much to take ("डोस आणि प्रमाण"), and the proper administration method ("घेण्याची योग्य पद्धत").
+</p>
+
+<h3 class="subsection-header">3. Visually Impaired Persons (दृष्टिहीन रुग्ण)</h3>
+<p>
+The Level-Q QR code provides a large, easily detectable optical target. Upon scanning, screen-readers and the native automated audio assistant immediately vocalize complete clinical information and safety warnings without requiring the user to visually inspect tiny embossed batch codes.
+</p>
+
+<h3 class="subsection-header">4. Specialized Dosage Form Administration Guidance</h3>
+<p>
+Complex pharmaceutical dosage forms require strict technique to ensure therapeutic efficacy (e.g., priming an inhaler, applying transdermal patches to hairless skin, maintaining sterility during eye drop instillation, or correctly dissolving dry antibiotic suspensions in boiled cool water). The invention provides specific, step-by-step guidance tailored to each of the fifteen dosage forms.
+</p>
+
+<h3 class="subsection-header">5. Independent Self-Administration & Anti-Counterfeiting</h3>
+<p>
+The system empowers patients to independently authenticate medicines without relying on third-party memory or external intermediaries. Furthermore, the batch verification engine cross-references the container's unique batch number against the central verified registry to detect unverified or fake formulations.
+</p>
+
+<h2 class="section-header">WORKING PRINCIPLE</h2>
+<p>
+The invention operates on the principle of physical-to-digital matrix transduction and intelligent multi-modal clinical verification:
+</p>
+
+<div class="flowchart">
+  <div class="step">Primary/Secondary Container with Level-Q QR Matrix Label</div><br>
+  ↓<br>
+  <div class="step">Optical Capture by Standard Smartphone Lens (No App Installation Required)</div><br>
+  ↓<br>
+  <div class="step">Instant Client Hydration & Alphanumeric Identifier Parsing</div><br>
+  ↓<br>
+  <div class="step">Real-Time Calendar Delta Verification (Valid / Expiring Soon / Expired)</div><br>
+  ↓<br>
+  <div class="step">Phonetic Speech Synthesis in Marathi / Hindi / English (0.8x-0.85x Speed)</div><br>
+  ↓<br>
+  <div class="step">Structured Visual Display of Indications, Dosage, and Administration Directions</div><br>
+  ↓<br>
+  <div class="step">Pharmacovigilance ADR Safety Matrix & Emergency Contraindication Alerts</div><br>
+  ↓<br>
+  <div class="step">Zero Medication Errors, Enhanced Adherence & Safe Patient Health Outcomes</div>
+</div>
+
+<h2 class="section-header">ADVANTAGES OF THE INVENTION</h2>
+<ol>
+  <li>Eliminates reading errors caused by microscopic print on pharmaceutical strips and bottles.</li>
+  <li>Bridges linguistic isolation by delivering vernacular spoken directions in regional languages (Marathi, Hindi).</li>
+  <li>Provides proactive real-time expiration alarms rather than passive static printed dates.</li>
+  <li>Functions universally on any modern smartphone without requiring app downloads or account creation.</li>
+  <li>Spans the complete pharmaceutical spectrum across 15 distinct dosage forms and 21 formulations.</li>
+  <li>Incorporates high fault tolerance via Level-Q QR encoding (up to 25% data recovery).</li>
+  <li>Aids illiterate, geriatric, and visually impaired patients in achieving independent medication management.</li>
+  <li>Promotes patient safety through proactive Adverse Drug Reaction (ADR) screening and PvPI reporting access.</li>
+  <li>Offers instant batch authentication to combat counterfeit and substandard medicines.</li>
+  <li>Features zero-crash architecture with local cache fallback and resilient React error boundaries.</li>
+</ol>
+
+<h2 class="section-header">INDUSTRIAL APPLICABILITY</h2>
+<p>
+The present invention possesses broad industrial and commercial applicability across pharmaceutical manufacturing lines, hospital dispensary units, government primary health centres (PHCs), retail pharmacy chains, and digital health monitoring networks.
+</p>
+<p>
+The physical 2D matrix identifiers can be seamlessly imprinted using high-speed industrial thermal transfer printers, continuous inkjet (CIJ) coders, or laser marking systems directly onto blister foils, glass vials, plastic bottles, collapsible aluminum tubes, and exterior cartons. The digital web monograph server and API architecture can be hosted on standard cloud infrastructure or integrated directly into government pharmacovigilance repositories (such as the Pharmacovigilance Programme of India - PvPI) and central drug standard control databases.
+</p>
+
+<div class="page-break"></div>
+
+<h2 class="section-header">CLAIMS</h2>
+
+<div class="claim-item">
+  <span class="claim-title">Claim 1:</span>
+  A smart Quick-Response (QR) enabled digital pharmaceutical packaging and dispensing verification system comprising:
+  <ul>
+    <li>a physical container holding a pharmaceutical formulation belonging to one of a plurality of distinct dosage forms;</li>
+    <li>a high-density 2D optical Quick Response matrix label affixed to said container, said matrix label being encoded with Level-Q error correction and containing a uniform resource identifier uniquely mapped to the batch and formulation metadata of said pharmaceutical preparation; and</li>
+    <li>a client-resilient digital monograph platform configured to resolve said uniform resource identifier upon optical scanning by a mobile device without requiring third-party software installation, wherein said platform automatically computes real-time expiration validity, renders accessible dosage directions, and synthesizes regional vernacular voice guidance for the patient.</li>
+  </ul>
+</div>
+
+<div class="claim-item">
+  <span class="claim-title">Claim 2:</span>
+  The system according to claim 1, wherein said plurality of distinct dosage forms comprises at least fifteen distinct pharmaceutical dosage forms selected from the group consisting of: tablets, capsules, oral syrups, dry suspensions, parenteral injections, ophthalmic eye drops, otic ear drops, topical ointments, dermatological creams, topical gels, rehydration powders, probiotic sachets, rectal suppositories, transdermal patches, and metered-dose inhalers.
+</div>
+
+<div class="claim-item">
+  <span class="claim-title">Claim 3:</span>
+  The system according to claim 1, wherein said platform comprises a multilingual phonetic speech synthesizer configured to parse regional language templates in Marathi, Hindi, and English, wherein said synthesizer executes audio delivery at a decelerated playback rate between 0.80x and 0.85x normal speed to maximize auditory comprehension for geriatric and illiterate rural patients.
+</div>
+
+<div class="claim-item">
+  <span class="claim-title">Claim 4:</span>
+  The system according to claim 1, wherein said platform comprises a dynamic expiration evaluation engine that programmatically calculates the temporal delta between the client device clock and the formulation expiration date, dynamically rendering:
+  <ul>
+    <li>a green affirmative status badge when expiration exceeds 60 days;</li>
+    <li>an amber cautionary badge when expiration is within 60 days; and</li>
+    <li>a pulsating crimson alert badge and automated audible warning prompt when the formulation has expired.</li>
+  </ul>
+</div>
+
+<div class="claim-item">
+  <span class="claim-title">Claim 5:</span>
+  The system according to claim 1, wherein said platform comprises a pharmacovigilance adverse drug reaction (ADR) matrix segregating known effects into mild common symptoms and severe adverse reactions, further providing contraindication criteria and direct emergency helpline integration.
+</div>
+
+<div class="claim-item">
+  <span class="claim-title">Claim 6:</span>
+  The system according to claim 1, wherein said platform comprises an instantaneous offline fallback architecture utilizing Progressive Web App (PWA) cache storage, synchronized local storage memory, and high-level React ErrorBoundary components to prevent blank-screen rendering failures during intermittent network connectivity.
+</div>
+
+<div class="claim-item">
+  <span class="claim-title">Claim 7:</span>
+  The system according to claim 1, wherein said platform comprises a batch verification module configured to validate input batch numbers against a verified multi-drug database to confirm authentic product manufacturing and manufacturer license validity.
+</div>
+
+<div class="page-break"></div>
+
+<h2 class="section-header">DETAILED SYSTEM ARCHITECTURE & FIGURE SPECIFICATIONS</h2>
+
+<h3 class="subsection-header">Description of Figures 1 to 7</h3>
+
+<p>
+<strong>Figure 1 illustrates the overall end-to-end system architecture</strong>, showing the physical Level-Q QR label affixed to a pharmaceutical container, the optical scanning interaction by a user's mobile device, the cloud serverless API resolution layer, the local cache hydration engine, and the resulting multi-modal user interface.
+</p>
+
+<p>
+<strong>Figure 2 illustrates the physical layout of the Smart QR Matrix Label</strong>, showing the high-density Level-Q matrix, 2-module quiet zone, human-readable alphanumeric batch credentials, dosage form indicator, and manufacturer verification badge.
+</p>
+
+<p>
+<strong>Figure 3 illustrates the patient-centric mobile interface layout</strong>, showing the top primary branding header, the instant chromatic Expiry Status Badge, the three-panel Quick Accessible Patient Summary Card (Indications, Dosage, Directions), the Voice Assistant control console, the comprehensive specifications table, the ADR safety card, and the printable label card.
+</p>
+
+<p>
+<strong>Figure 4 illustrates the multilingual phonetic voice synthesizer flowchart</strong>, depicting the automatic language selector, grammar script builder, regional voice selector (Marathi `mr-IN`, Hindi `hi-IN`, English `en`), 0.8x speech rate throttle, and speech synthesis execution loop.
+</p>
+
+<p>
+<strong>Figure 5 illustrates the real-time expiration and batch authenticity verification engine</strong>, showing the decision tree for calendar delta computation (&gt;60 days, &le;60 days, &lt;0 days), associated badge color assignments, and batch database cross-referencing logic.
+</p>
+
+<p>
+<strong>Figure 6 illustrates the pharmacovigilance ADR safety decision tree</strong>, depicting symptom matching, classification of adverse reactions into common versus serious categories, contraindication screening, and emergency escalation routing.
+</p>
+
+<p>
+<strong>Figure 7 illustrates the exploded multi-tier client-server architectural stack</strong>, showing the physical packaging layer, the optical capture layer, the progressive web app service worker cache, the API router, the JSON formulation repository, and the client-side error boundary containment wrapper.
+</p>
+
+<div class="figure-box">
++---------------------------------------------------------------------------------------------------+
+| FIGURE 1: SMART MED QR - OVERALL PHYSICAL-TO-DIGITAL SYSTEM ARCHITECTURE                          |
++---------------------------------------------------------------------------------------------------+
+|                                                                                                   |
+|  [ Physical Pharmaceutical Packaging ]                                                            |
+|  +-----------------------------------+                                                            |
+|  | Tablet / Syrup / Drop / Inhaler   |                                                            |
+|  | +-------------------------------+ |         [ Smartphone Camera ]                              |
+|  | | LEVEL-Q HIGH DENSITY QR CODE  | |  =====> ( Optical 2D Scan )                                |
+|  | | Batch No: CD11904             | |                   |                                        |
+|  | +-------------------------------+ |                   v                                        |
+|  +-----------------------------------+         [ Client-Side Engine ]                             |
+|                                                +-----------------------------------------+        |
+|                                                | - URL / Batch Parser                    |        |
+|                                                | - Synchronous Local Storage Hydration   |        |
+|                                                | - Service Worker Offline Cache          |        |
+|                                                +-----------------------------------------+        |
+|                                                                  |                                |
+|                                                                  v                                |
+|                           +--------------------------------------+--------------------------------+
+|                           |                                      |                                |
+|                           v                                      v                                v
+|               [ Dynamic Expiry Engine ]              [ Vernacular Audio Engine ]       [ Safety Matrix ]  
+|               +-----------------------+              +-------------------------+       +----------------+ 
+|               | Delta > 60d : GREEN   |              | Native Marathi / Hindi  |       | Common Effects | 
+|               | Delta 0-60d : AMBER   |              | 0.8x Slow Speech Rate   |       | Serious ADRs   | 
+|               | Delta < 0d  : RED     |              | Audible Expiry Warning  |       | PvPI Helpline  | 
+|               +-----------------------+              +-------------------------+       +----------------+ 
++---------------------------------------------------------------------------------------------------+
+</div>
+
+<h2 class="section-header">STATEMENT OF NOVELTY</h2>
+<p>
+The novelty of the present invention resides in the integration of a physical high-fault-tolerant (Level-Q) QR matrix label on diverse pharmaceutical dosage containers with an automated, zero-download, multilingual voice-synthesized digital monograph system that combines real-time chromatic expiration status computation, natural language regional audio guidance at decelerated pace, structured dosage form specific instructions, and a pharmacovigilance adverse reaction classification matrix within an offline-resilient, crash-proof architecture.
+</p>
+
+<h2 class="section-header">DISCLAIMER-STYLE WORDING</h2>
+<ul>
+  <li>No claim is made by virtue of this specification in respect of any standard pre-existing third-party hardware devices, standard smartphone camera sensors, or conventional web browsers utilized for accessing the system.</li>
+  <li>No exclusive right is claimed in respect of individual pre-existing chemical nomenclature, registered pharmaceutical brand trademarks, or commercial logos displayed strictly for experimental and exemplary illustration in the reference database.</li>
+  <li>The scope of the invention is defined by the appended claims and encompasses all technological equivalents, architectural variations, and dosage form adaptations conforming to the principles disclosed herein.</li>
+</ul>
+
+</body>
+</html>

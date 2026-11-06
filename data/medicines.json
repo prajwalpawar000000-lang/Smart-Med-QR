@@ -1,5 +1,6 @@
 {
-  "disclaimer": "⚠️ MedQR Live Database • Avishkar State Research Project",
+  "disclaimer": "MedQR Verified Medicine Database",
+  "lastUpdated": "2026-11-06T09:06:10.594Z",
   "medicines": [
     {
       "id": 1,
@@ -14,8 +15,8 @@
       "route": "Oral",
       "manufacturer": "GlaxoSmithKline Pharmaceuticals Ltd.",
       "batchNo": "PA24567",
-      "mfgDate": "04/2024",
-      "expDate": "03/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "G/25/1884",
       "pageLink": "/medicine/1",
       "sideEffects": {
@@ -28,7 +29,19 @@
           "Liver toxicity (with overdose)",
           "Allergic skin rash",
           "Jaundice (yellow eyes/skin)"
-        ]
+        ],
+        "adverseReactions": [
+          "Liver toxicity (with overdose)",
+          "Allergic skin rash",
+          "Jaundice (yellow eyes/skin)"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -45,7 +58,46 @@
           "directionForUse": "1 गोली एक गिलास पानी के साथ निगलें। खाली पेट न लें, कुछ खाकर ही लें।",
           "sideEffects": "हल्की मिचली, पेट में भारीपन। अधिक मात्रा में लेने से लिवर को नुकसान हो सकता है।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0001",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 30°C in a dry place. Protect from moisture and direct sunlight.",
+      "precautions": "Swallow whole with water. Do not crush unless directed by physician.",
+      "drugInteractions": "Avoid concomitant alcohol consumption and other paracetamol-containing products. Monitor if using blood thinners (warfarin).",
+      "batches": [
+        {
+          "batchNo": "PA24567",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "G/25/1884",
+          "status": "Active",
+          "createdAt": "04/2024"
+        },
+        {
+          "batchNo": "PA24568",
+          "mfgDate": "2024-06-01",
+          "expDate": "2026-05-31",
+          "mfgLicenceNo": "G/25/1884",
+          "status": "Active",
+          "createdAt": "2024-06-01"
+        },
+        {
+          "batchNo": "PA-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "G/25/1884",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "PA-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "G/25/1884",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 2,
@@ -60,8 +112,8 @@
       "route": "Oral",
       "manufacturer": "Cipla Ltd.",
       "batchNo": "IB38291",
-      "mfgDate": "10/2024",
-      "expDate": "11/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "MH/DRUG/28A/452",
       "pageLink": "/medicine/2",
       "sideEffects": {
@@ -76,7 +128,20 @@
           "Internal gastrointestinal bleeding",
           "Kidney impairment",
           "Severe skin allergy"
-        ]
+        ],
+        "adverseReactions": [
+          "Gastric ulceration",
+          "Internal gastrointestinal bleeding",
+          "Kidney impairment",
+          "Severe skin allergy"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -93,7 +158,46 @@
           "directionForUse": "खाली पेट बिल्कुल न लें। पेट में जलन से बचने के लिए भोजन या दूध के बाद पानी के साथ निगलें।",
           "sideEffects": "पेट में जलन, मिचली, अपच। अल्सर के मरीज बिना डॉक्टर न लें।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0002",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 30°C in a dry place. Protect from moisture and direct sunlight.",
+      "precautions": "Swallow whole with water. Do not crush unless directed by physician.",
+      "drugInteractions": "Avoid concurrent NSAIDs, aspirin, oral steroids, or blood pressure medications (ACE inhibitors) without doctor review.",
+      "batches": [
+        {
+          "batchNo": "IB38291",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "MH/DRUG/28A/452",
+          "status": "Active",
+          "createdAt": "10/2024"
+        },
+        {
+          "batchNo": "IB-EXP01",
+          "mfgDate": "2022-05-01",
+          "expDate": "2024-04-30",
+          "mfgLicenceNo": "MH/DRUG/28A/452",
+          "status": "Expired",
+          "createdAt": "2022-05-01"
+        },
+        {
+          "batchNo": "IB-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MH/DRUG/28A/452",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "IB-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MH/DRUG/28A/452",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 3,
@@ -108,8 +212,8 @@
       "route": "Oral",
       "manufacturer": "Dr. Reddy's Laboratories",
       "batchNo": "CZ15483",
-      "mfgDate": "05/2025",
-      "expDate": "04/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "AP/MED/1029",
       "pageLink": "/medicine/3",
       "sideEffects": {
@@ -123,7 +227,19 @@
           "Extreme sedation",
           "Difficulty urinating",
           "Severe allergic reactions (angioedema)"
-        ]
+        ],
+        "adverseReactions": [
+          "Extreme sedation",
+          "Difficulty urinating",
+          "Severe allergic reactions (angioedema)"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -140,7 +256,38 @@
           "directionForUse": "रात को सोने से पहले पानी के साथ लें। इस गोली से नींद और सुस्ती आ सकती है, इसलिए गाड़ी न चलाएं।",
           "sideEffects": "सुस्ती, मुंह सूखना, हल्का सिरदर्द।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0003",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 30°C in a dry place. Protect from moisture and direct sunlight.",
+      "precautions": "Swallow whole with water. Do not crush unless directed by physician.",
+      "drugInteractions": "Avoid alcohol and sedatives/tranquilizers as drowsiness may be magnified.",
+      "batches": [
+        {
+          "batchNo": "CZ15483",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "AP/MED/1029",
+          "status": "Active",
+          "createdAt": "05/2025"
+        },
+        {
+          "batchNo": "CZ-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "AP/MED/1029",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "CZ-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "AP/MED/1029",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 4,
@@ -170,7 +317,19 @@
           "Clostridium difficile diarrhea",
           "Bone fracture risk with long-term use",
           "Hypomagnesemia"
-        ]
+        ],
+        "adverseReactions": [
+          "Clostridium difficile diarrhea",
+          "Bone fracture risk with long-term use",
+          "Hypomagnesemia"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -187,7 +346,46 @@
           "directionForUse": "सुबह उठकर खाली पेट 1 कैप्सूल पूरे पानी के साथ निगल लें। कैप्सूल को चबाएं या खोलें नहीं।",
           "sideEffects": "सिरदर्द, पेट फूलना, हल्की दस्त।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0004",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C in a tightly closed moisture-proof container.",
+      "precautions": "Take with full glass of water. Do not open capsule shell.",
+      "drugInteractions": "May decrease absorption of iron, ketoconazole, and vitamin B12. Consult doctor if taking clopidogrel or methotrexate.",
+      "batches": [
+        {
+          "batchNo": "OM67245",
+          "mfgDate": "10/2025",
+          "expDate": "09/2027",
+          "mfgLicenceNo": "KA/BLR/2021/66",
+          "status": "Active",
+          "createdAt": "10/2025"
+        },
+        {
+          "batchNo": "OM-NEAR02",
+          "mfgDate": "2024-02-01",
+          "expDate": "2026-12-21",
+          "mfgLicenceNo": "KA/BLR/2021/66",
+          "status": "Active",
+          "createdAt": "2024-02-01"
+        },
+        {
+          "batchNo": "OM-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "KA/BLR/2021/66",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "OM-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "KA/BLR/2021/66",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 5,
@@ -217,7 +415,19 @@
           "Severe allergic anaphylaxis",
           "Skin blistering",
           "Severe persistent watery diarrhea"
-        ]
+        ],
+        "adverseReactions": [
+          "Severe allergic anaphylaxis",
+          "Skin blistering",
+          "Severe persistent watery diarrhea"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -234,7 +444,38 @@
           "directionForUse": "भोजन के बाद पानी के साथ पूरा निगलें। डॉक्टर द्वारा बताया गया पूरा कोर्स खत्म करें, बीच में न छोड़ें।",
           "sideEffects": "पतले दस्त, मिचली, शरीर पर दाने।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0005",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C in a tightly closed moisture-proof container.",
+      "precautions": "Take with full glass of water. Do not open capsule shell.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "AX98103",
+          "mfgDate": "05/2025",
+          "expDate": "04/2027",
+          "mfgLicenceNo": "GJ/VAD/5104",
+          "status": "Active",
+          "createdAt": "05/2025"
+        },
+        {
+          "batchNo": "AX-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "GJ/VAD/5104",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "AX-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "GJ/VAD/5104",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 6,
@@ -249,8 +490,8 @@
       "route": "Oral",
       "manufacturer": "Glenmark Pharmaceuticals Ltd.",
       "batchNo": "AS48912",
-      "mfgDate": "11/2024",
-      "expDate": "10/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "HP/SOLAN/2019/88",
       "pageLink": "/medicine/6",
       "sideEffects": {
@@ -264,7 +505,19 @@
           "Respiratory depression (high doses)",
           "Confusion",
           "Hallucinations"
-        ]
+        ],
+        "adverseReactions": [
+          "Respiratory depression (high doses)",
+          "Confusion",
+          "Hallucinations"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -281,7 +534,38 @@
           "directionForUse": "शीशी को अच्छी तरह हिलाकर नाप वाले ढक्कन से पिएं। पीने के 15 मिनट बाद तक पानी न पिएं।",
           "sideEffects": "नींद आना, सुस्ती, मुंह में सूखापन।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0006",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C. Shake well before use. Keep tightly closed.",
+      "precautions": "Use accurate measuring cup/spoon provided. Do not use household spoons.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "AS48912",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "HP/SOLAN/2019/88",
+          "status": "Active",
+          "createdAt": "11/2024"
+        },
+        {
+          "batchNo": "AS-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "HP/SOLAN/2019/88",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "AS-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "HP/SOLAN/2019/88",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 7,
@@ -296,8 +580,8 @@
       "route": "Oral",
       "manufacturer": "GSK Healthcare India",
       "batchNo": "CP55102",
-      "mfgDate": "11/2024",
-      "expDate": "10/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "TN/CHE/2022/410",
       "pageLink": "/medicine/7",
       "sideEffects": {
@@ -309,7 +593,19 @@
           "Liver damage if overdosed",
           "Allergic rash",
           "Swelling of lips or eyes"
-        ]
+        ],
+        "adverseReactions": [
+          "Liver damage if overdosed",
+          "Allergic rash",
+          "Swelling of lips or eyes"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -326,7 +622,38 @@
           "directionForUse": "शीशी को अच्छी तरह हिलाकर नाप वाली चम्मच या ड्रॉपर से ही पिलाएं।",
           "sideEffects": "पसीना आना, पेट में भारीपन।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0007",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C. Shake well before use. Keep tightly closed.",
+      "precautions": "Use accurate measuring cup/spoon provided. Do not use household spoons.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "CP55102",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "TN/CHE/2022/410",
+          "status": "Active",
+          "createdAt": "11/2024"
+        },
+        {
+          "batchNo": "CP-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "TN/CHE/2022/410",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "CP-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "TN/CHE/2022/410",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 8,
@@ -354,7 +681,18 @@
         "serious": [
           "Hypophosphatemia (long-term high doses)",
           "Magnesium accumulation in kidney patients"
-        ]
+        ],
+        "adverseReactions": [
+          "Hypophosphatemia (long-term high doses)",
+          "Magnesium accumulation in kidney patients"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -371,7 +709,38 @@
           "directionForUse": "शीशी को जोर से हिलाकर लें। भोजन के 1 घंटे बाद या गैस होने पर तुरंत पिएं।",
           "sideEffects": "कब्ज या हल्का दस्त।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0008",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C. Reconstituted suspension must be refrigerated (2°C-8°C) and used within 7 days.",
+      "precautions": "Shake vigorously before each dose. Discard unused portion after recommended period.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "GL99182",
+          "mfgDate": "05/2024",
+          "expDate": "03/2027",
+          "mfgLicenceNo": "MH/BOM/2018/12",
+          "status": "Active",
+          "createdAt": "05/2024"
+        },
+        {
+          "batchNo": "GL-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MH/BOM/2018/12",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "GL-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MH/BOM/2018/12",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 9,
@@ -401,7 +770,19 @@
           "Severe allergic reaction",
           "Cholestatic jaundice / hepatitis",
           "Pseudomembranous colitis"
-        ]
+        ],
+        "adverseReactions": [
+          "Severe allergic reaction",
+          "Cholestatic jaundice / hepatitis",
+          "Pseudomembranous colitis"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -418,7 +799,38 @@
           "directionForUse": "उबले और ठंडे पानी से निशान तक घोलें। अच्छी तरह हिलाएं और फ्रिज में रखकर 7 दिन के भीतर इस्तेमाल करें।",
           "sideEffects": "दस्त, मिचली, उल्टी।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0009",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C. Reconstituted suspension must be refrigerated (2°C-8°C) and used within 7 days.",
+      "precautions": "Shake vigorously before each dose. Discard unused portion after recommended period.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "AG71203",
+          "mfgDate": "11/2026",
+          "expDate": "10/2028",
+          "mfgLicenceNo": "MH/THN/2023/901",
+          "status": "Active",
+          "createdAt": "11/2026"
+        },
+        {
+          "batchNo": "AG-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MH/THN/2023/901",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "AG-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MH/THN/2023/901",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 10,
@@ -448,7 +860,19 @@
           "Severe anaphylactic shock",
           "Biliary sludging",
           "Immune hemolytic anemia"
-        ]
+        ],
+        "adverseReactions": [
+          "Severe anaphylactic shock",
+          "Biliary sludging",
+          "Immune hemolytic anemia"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -465,7 +889,38 @@
           "directionForUse": "यह इंजेक्शन केवल अस्पताल में डॉक्टर या नर्स द्वारा ही लगाया जाना चाहिए। खुद न लगाएं।",
           "sideEffects": "सुई लगने की जगह दर्द, सूजन, लाल चकत्ते।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0010",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store between 2°C to 8°C (Refrigerate). Do not freeze. Protect from light.",
+      "precautions": "For clinical/hospital administration by trained healthcare provider only.",
+      "drugInteractions": "Avoid mixing with calcium-containing intravenous solutions due to precipitation risk.",
+      "batches": [
+        {
+          "batchNo": "MN88410",
+          "mfgDate": "09/2026",
+          "expDate": "10/2028",
+          "mfgLicenceNo": "MP/IND/2020/554",
+          "status": "Active",
+          "createdAt": "09/2026"
+        },
+        {
+          "batchNo": "MN-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MP/IND/2020/554",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "MN-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MP/IND/2020/554",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 11,
@@ -494,7 +949,19 @@
           "Corneal precipitate",
           "Corneal staining",
           "Photophobia"
-        ]
+        ],
+        "adverseReactions": [
+          "Corneal precipitate",
+          "Corneal staining",
+          "Photophobia"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -511,7 +978,38 @@
           "directionForUse": "हाथ धोकर निचली पलक खींचकर बूंद डालें। ड्रॉपर की नोक को आंख या उंगलियों से न छुएं। शीशी खोलने के 1 माह बाद फेंक दें।",
           "sideEffects": "डालने पर हल्की जलन, कुछ पल धुंधला दिखना।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0011",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C. Discard container 30 days after first opening. Keep dropper tip sterile.",
+      "precautions": "Wash hands before instillation. Avoid contact of dropper tip with eye or skin surface.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "CP22901",
+          "mfgDate": "06/2024",
+          "expDate": "10/2028",
+          "mfgLicenceNo": "GA/GOA/2021/31",
+          "status": "Active",
+          "createdAt": "06/2024"
+        },
+        {
+          "batchNo": "CP-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "GA/GOA/2021/31",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "CP-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "GA/GOA/2021/31",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 12,
@@ -539,7 +1037,18 @@
         "serious": [
           "Ototoxicity (if eardrum is perforated)",
           "Severe fungal overgrowth"
-        ]
+        ],
+        "adverseReactions": [
+          "Ototoxicity (if eardrum is perforated)",
+          "Severe fungal overgrowth"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -556,7 +1065,38 @@
           "directionForUse": "सिर को एक तरफ झुकाकर बूंदें डालें और 5 मिनट तक उसी स्थिति में रहें ताकि दवाई अंदर जाए।",
           "sideEffects": "कान में हल्की खुजली या झनझनाहट।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0012",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C away from heat. Do not touch dropper tip to ear.",
+      "precautions": "Warm bottle slightly in hand before instillation. Lie with ear facing upward for 2 minutes.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "CN40182",
+          "mfgDate": "05/2026",
+          "expDate": "04/2028",
+          "mfgLicenceNo": "MH/NAS/2022/19",
+          "status": "Active",
+          "createdAt": "05/2026"
+        },
+        {
+          "batchNo": "CN-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MH/NAS/2022/19",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "CN-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MH/NAS/2022/19",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 13,
@@ -585,7 +1125,18 @@
         "serious": [
           "Lactic acidosis (rare but severe)",
           "Vitamin B12 deficiency (long term)"
-        ]
+        ],
+        "adverseReactions": [
+          "Lactic acidosis (rare but severe)",
+          "Vitamin B12 deficiency (long term)"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -602,7 +1153,38 @@
           "directionForUse": "गोली को चबाए बिना पानी से निगलें। पेट की खराबी से बचने के लिए हमेशा भोजन के साथ लें।",
           "sideEffects": "पेट में मरोड़, मिचली, मुंह में कसैला स्वाद।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0013",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 30°C in a dry place. Protect from moisture and direct sunlight.",
+      "precautions": "Swallow whole with water. Do not crush unless directed by physician.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "GM31940",
+          "mfgDate": "07/2026",
+          "expDate": "08/2028",
+          "mfgLicenceNo": "MH/MUM/2020/781",
+          "status": "Active",
+          "createdAt": "07/2026"
+        },
+        {
+          "batchNo": "GM-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MH/MUM/2020/781",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "GM-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MH/MUM/2020/781",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 14,
@@ -617,8 +1199,8 @@
       "route": "Topical",
       "manufacturer": "GlaxoSmithKline Pharmaceuticals",
       "batchNo": "BC88102",
-      "mfgDate": "03/2026",
-      "expDate": "02/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "MH/THA/2021/44",
       "pageLink": "/medicine/14",
       "sideEffects": {
@@ -631,7 +1213,19 @@
           "Contact dermatitis",
           "Severe allergic rash",
           "Polyethylene glycol toxicity (extensive open areas)"
-        ]
+        ],
+        "adverseReactions": [
+          "Contact dermatitis",
+          "Severe allergic rash",
+          "Polyethylene glycol toxicity (extensive open areas)"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -648,7 +1242,38 @@
           "directionForUse": "घाव को साफ करके सुखाएं, फिर पतली परत लगाएं। पट्टी से ढक सकते हैं। आंखों से दूर रखें।",
           "sideEffects": "लगाने पर हल्की जलन या खुजली।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0014",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 30°C. Keep tube tightly capped after use.",
+      "precautions": "Clean and dry affected area before application. Avoid open deep wounds.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "BC88102",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "MH/THA/2021/44",
+          "status": "Active",
+          "createdAt": "03/2026"
+        },
+        {
+          "batchNo": "BC-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MH/THA/2021/44",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "BC-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MH/THA/2021/44",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 15,
@@ -663,8 +1288,8 @@
       "route": "Topical",
       "manufacturer": "Glenmark Pharmaceuticals",
       "batchNo": "CD11904",
-      "mfgDate": "11/2025",
-      "expDate": "10/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "HP/SOL/2022/99",
       "pageLink": "/medicine/15",
       "sideEffects": {
@@ -677,7 +1302,18 @@
         "serious": [
           "Contact sensitization",
           "Severe skin blistering"
-        ]
+        ],
+        "adverseReactions": [
+          "Contact sensitization",
+          "Severe skin blistering"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -694,7 +1330,38 @@
           "directionForUse": "प्रभावित त्वचा को धोकर सुखा लें, फिर क्रीम लगाएं। खुजली मिटने के बाद भी 2 हफ्ते तक लगाते रहें।",
           "sideEffects": "लगाने पर हल्की चुभन या त्वचा का लाल होना।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0015",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C. Do not freeze.",
+      "precautions": "Apply thin layer and rub in gently. Wash hands before and after use.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "CD11904",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "HP/SOL/2022/99",
+          "status": "Active",
+          "createdAt": "11/2025"
+        },
+        {
+          "batchNo": "CD-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "HP/SOL/2022/99",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "CD-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "HP/SOL/2022/99",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 16,
@@ -722,7 +1389,18 @@
         "serious": [
           "Photodermatitis",
           "Systemic absorption toxicity (with extensive occluded usage)"
-        ]
+        ],
+        "adverseReactions": [
+          "Photodermatitis",
+          "Systemic absorption toxicity (with extensive occluded usage)"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -739,7 +1417,38 @@
           "directionForUse": "हल्के हाथों से लगाएं, जोर से मालिश न करें। कटी-फटी त्वचा पर न लगाएं। लगाने के बाद हाथ धो लें।",
           "sideEffects": "लगाने की जगह हल्की जलन या गर्माहट।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0016",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 30°C in a cool, dry place. Flammable: keep away from flame.",
+      "precautions": "Wash hands after use. Avoid application to broken skin, eyes, or mucous membranes.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "VL55201",
+          "mfgDate": "10/2026",
+          "expDate": "09/2028",
+          "mfgLicenceNo": "GJ/BAR/2021/812",
+          "status": "Active",
+          "createdAt": "10/2026"
+        },
+        {
+          "batchNo": "VL-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "GJ/BAR/2021/812",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "VL-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "GJ/BAR/2021/812",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 17,
@@ -765,7 +1474,18 @@
         "serious": [
           "Hypernatremia (if mixed with too little water)",
           "Hyperkalemia (in severe renal failure)"
-        ]
+        ],
+        "adverseReactions": [
+          "Hypernatremia (if mixed with too little water)",
+          "Hyperkalemia (in severe renal failure)"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -782,7 +1502,38 @@
           "directionForUse": "उबले और ठंडे 1 लीटर पानी में पूरा पैकेट अच्छी तरह घोलें। घोल को 24 घंटे के अंदर ही पिएं, बचा हुआ फेंक दें।",
           "sideEffects": "ज्यादा गाढ़ा बनाने पर उल्टी या जी मिचलाना।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0017",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 30°C in dry conditions. Reconstituted solution to be used within 24 hours.",
+      "precautions": "Dissolve completely in specified volume of safe drinking water.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "EL81902",
+          "mfgDate": "05/2026",
+          "expDate": "04/2028",
+          "mfgLicenceNo": "MH/WAL/2020/19",
+          "status": "Active",
+          "createdAt": "05/2026"
+        },
+        {
+          "batchNo": "EL-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MH/WAL/2020/19",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "EL-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MH/WAL/2020/19",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 18,
@@ -809,7 +1560,17 @@
         ],
         "serious": [
           "Fungemia (in critically ill / central venous catheter patients)"
-        ]
+        ],
+        "adverseReactions": [
+          "Fungemia (in critically ill / central venous catheter patients)"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -826,7 +1587,38 @@
           "directionForUse": "गुनगुने पानी, दूध या जूस में मिलाकर तुरंत पिएं। बहुत गर्म तरल में न मिलाएं।",
           "sideEffects": "हल्की गैस या पेट फूलना।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0018",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 25°C in dry place. Consume immediately upon opening.",
+      "precautions": "Mix with room temperature liquid or food. Do not mix with very hot liquids.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "EC61290",
+          "mfgDate": "10/2026",
+          "expDate": "08/2028",
+          "mfgLicenceNo": "TG/HYD/2022/411",
+          "status": "Active",
+          "createdAt": "10/2026"
+        },
+        {
+          "batchNo": "EC-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "TG/HYD/2022/411",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "EC-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "TG/HYD/2022/411",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 19,
@@ -841,8 +1633,8 @@
       "route": "Rectal",
       "manufacturer": "Bafna Pharmaceuticals",
       "batchNo": "GL22810",
-      "mfgDate": "01/2024",
-      "expDate": "02/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "TN/MAD/2021/72",
       "pageLink": "/medicine/19",
       "sideEffects": {
@@ -853,7 +1645,17 @@
         ],
         "serious": [
           "Laxative dependence with prolonged misuse"
-        ]
+        ],
+        "adverseReactions": [
+          "Laxative dependence with prolonged misuse"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -870,7 +1672,38 @@
           "directionForUse": "यह मुंह से खाने की दवाई नहीं है! हाथ धोकर गुदा मार्ग में डालें और 15-20 मिनट रोकें ताकि पेट साफ हो जाए।",
           "sideEffects": "गुदा मार्ग में हल्की जलन या मरोड़।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0019",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 20°C in refrigerator or cool place to maintain solid structure.",
+      "precautions": "For rectal use only. Wash hands before and after insertion.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "GL22810",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "TN/MAD/2021/72",
+          "status": "Active",
+          "createdAt": "01/2024"
+        },
+        {
+          "batchNo": "GL-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "TN/MAD/2021/72",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "GL-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "TN/MAD/2021/72",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 20,
@@ -885,8 +1718,8 @@
       "route": "Transdermal",
       "manufacturer": "Johnson & Johnson Ltd.",
       "batchNo": "NC77102",
-      "mfgDate": "11/2025",
-      "expDate": "10/2026",
+      "mfgDate": "01/2025",
+      "expDate": "12/2027",
       "mfgLicenceNo": "MH/BOM/2023/1004",
       "pageLink": "/medicine/20",
       "sideEffects": {
@@ -899,7 +1732,18 @@
         "serious": [
           "Nicotine overdose symptoms (palpitations, nausea, cold sweats)",
           "Severe contact allergy"
-        ]
+        ],
+        "adverseReactions": [
+          "Nicotine overdose symptoms (palpitations, nausea, cold sweats)",
+          "Severe contact allergy"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -916,7 +1760,38 @@
           "directionForUse": "बांह या सीने की सूखी व बिना बालों वाली त्वचा पर चिपकाएं। पैच लगा होने पर तंबाकू या सिगरेट न पिएं।",
           "sideEffects": "चिपकाने की जगह खुजली, नींद में सपने आना।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0020",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store in original pouch below 25°C. Apply immediately after opening pouch.",
+      "precautions": "Apply to clean, dry, hairless intact skin. Rotate application sites.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "NC77102",
+          "mfgDate": "01/2025",
+          "expDate": "12/2027",
+          "mfgLicenceNo": "MH/BOM/2023/1004",
+          "status": "Active",
+          "createdAt": "11/2025"
+        },
+        {
+          "batchNo": "NC-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "MH/BOM/2023/1004",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "NC-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "MH/BOM/2023/1004",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     },
     {
       "id": 21,
@@ -946,7 +1821,19 @@
           "Paradoxical bronchospasm",
           "Severe hypokalemia",
           "Cardiac arrhythmias"
-        ]
+        ],
+        "adverseReactions": [
+          "Paradoxical bronchospasm",
+          "Severe hypokalemia",
+          "Cardiac arrhythmias"
+        ],
+        "warnings": [
+          "Follow prescribed dose and schedule strictly.",
+          "Keep out of reach and sight of children.",
+          "Consult physician or pharmacist before use during pregnancy or lactation."
+        ],
+        "contraindications": "Known hypersensitivity to active substance or excipients.",
+        "emergencyWarning": "In case of severe allergic reaction, breathing difficulty, or suspected overdose, seek urgent emergency medical attention immediately."
       },
       "translations": {
         "mr": {
@@ -963,7 +1850,38 @@
           "directionForUse": "इनहेलर को हिलाएं। मुंह से पूरी सांस बाहर निकालें, फिर पंप दबाते हुए गहरी सांस अंदर खींचें और 10 सेकंड रोकें। उपयोग के बाद कुल्ला करें।",
           "sideEffects": "हाथ कांपना, दिल की धड़कन तेज होना, सिरदर्द।"
         }
-      }
+      },
+      "qrCodeIdentifier": "MEDQR-0021",
+      "registrationStatus": "Registered & Active",
+      "storageConditions": "Store below 30°C. Protect from frost and direct sunlight. Pressurized canister: do not puncture.",
+      "precautions": "Rinse mouth with water after inhalation. Prime device before initial use.",
+      "drugInteractions": "Inform your doctor about any concurrent prescription or OTC medicines.",
+      "batches": [
+        {
+          "batchNo": "AS90142",
+          "mfgDate": "10/2026",
+          "expDate": "09/2028",
+          "mfgLicenceNo": "HP/BAD/2021/602",
+          "status": "Active",
+          "createdAt": "10/2026"
+        },
+        {
+          "batchNo": "AS-NEAR01",
+          "mfgDate": "2024-01-01",
+          "expDate": "2026-12-15",
+          "mfgLicenceNo": "HP/BAD/2021/602",
+          "status": "Active",
+          "createdAt": "2024-01-01"
+        },
+        {
+          "batchNo": "AS-EXP99",
+          "mfgDate": "2022-01-15",
+          "expDate": "2023-12-31",
+          "mfgLicenceNo": "HP/BAD/2021/602",
+          "status": "Expired",
+          "createdAt": "2022-01-15"
+        }
+      ]
     }
   ]
 }
